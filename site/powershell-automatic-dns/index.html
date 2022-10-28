@@ -382,11 +382,11 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1>Automatically Add Multiple DNS A Records</h1>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/dns/dns.png"><img alt="" src="../images/dns/dns.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/powershell/dns/dns.png"><img alt="" src="../images/powershell/dns/dns.png"/></a></p>
 <p>If you need to add multiple A records to your DNS, here’s a quick way to do so.</p>
 <p>Create a CSV file, name it however you like (make sure you correct the name of the file in the script itself).
 Then, the first row should be filled with the words “Hostname” and “IP”. You can change that as wel but once again, make sure you edit the script accordingly.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/dns/excel.png"><img alt="" src="../images/dns/excel.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/powershell/dns/excel.png"><img alt="" src="../images/powershell/dns/excel.png"/></a></p>
 <p>Then, edit this script with your relevant information like the CSV filename, zone name, and your DC.</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nv">$IPs</span> <span class="p">=</span> <span class="nb">Import-Csv</span> <span class="s2">"C:\temp\dnsIPs.csv"</span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">foreach</span> <span class="p">(</span><span class="nv">$item</span> <span class="k">in</span> <span class="nv">$IPs</span><span class="p">)</span>
