@@ -382,10 +382,10 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1>Shutdown and Delete Multiple VMs Automatically</h1>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/powershell/shutdown-delete1.png"><img alt="" src="../images/powershell/shutdown-delete1.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/powershell/auto-shutdown-delete/shutdown-delete1.png"><img alt="" src="../images/powershell/auto-shutdown-delete/shutdown-delete1.png"/></a></p>
 <p>This is a simple script to shutdown and delete multiple VMs at once in VMware.</p>
 <p>Make sure you have a list of VMs in a text file. It’s simple to export a list of VMs in a certain folder in your vcenter, but just as an example, it should look like this:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/powershell/shutdown-delete2.png"><img alt="" src="../images/powershell/shutdown-delete2.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/powershell/auto-shutdown-delete/shutdown-delete2.png"><img alt="" src="../images/powershell/auto-shutdown-delete/shutdown-delete2.png"/></a></p>
 <p>Then, here’s the script, run it:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nv">$vcenter</span> <span class="p">=</span> <span class="nb">Read-Host</span><span class="p">(</span><span class="s2">"Enter VCenter IP"</span><span class="p">)</span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nv">$VMs</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-Content</span> <span class="n">C</span><span class="p">:\</span><span class="n">temp</span><span class="p">\</span><span class="n">vmlist</span><span class="p">.</span><span class="n">txt</span><span class="p">)</span>
