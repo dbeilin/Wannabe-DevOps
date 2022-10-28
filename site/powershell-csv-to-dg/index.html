@@ -9,7 +9,7 @@
 <meta content="Daniel Beilin" name="author"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.1, mkdocs-material-8.5.7" name="generator"/>
-<title>Resize or Clear Client Cache - Beinish</title>
+<title>Add Users From a CSV to a Distribution Group with PowerShell - Beinish</title>
 <link href="../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
 <meta content="#4051b5" name="theme-color"/>
@@ -31,9 +31,6 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#resize-cache-size">
-          Skip to content
-        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -55,7 +52,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Resize or Clear Client Cache
+              Add Users From a CSV to a Distribution Group with PowerShell
             
           </span>
 </div>
@@ -113,37 +110,37 @@
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../direnv/">
+<a class="md-tabs__link" href="../general-direnv/">
         General
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../ssm-patch-group/">
+<a class="md-tabs__link" href="../aws-ssm-patchgroup/">
         AWS
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../pandas-delta/">
+<a class="md-tabs__link" href="../python-pandas-delta/">
         Python
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../consolidation-alert/">
+<a class="md-tabs__link md-tabs__link--active" href="../powershell-consolidation-alert/">
         PowerShell
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="./">
+<a class="md-tabs__link" href="../sccm-client-cache/">
         SCCM
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../2020/">
+<a class="md-tabs__link" href="../projects-2020/">
         My Projects
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../media-server/">
+<a class="md-tabs__link" href="../homelab-media-server/">
         Home Lab
       </a>
 </li>
@@ -196,7 +193,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../direnv/">
+<a class="md-nav__link" href="../general-direnv/">
         Switch Between AWS Credentials With Direnv
       </a>
 </li>
@@ -216,7 +213,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../ssm-patch-group/">
+<a class="md-nav__link" href="../aws-ssm-patchgroup/">
         Add Multiple Instances To a Patch Group in SSM
       </a>
 </li>
@@ -236,15 +233,15 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../pandas-delta/">
+<a class="md-nav__link" href="../python-pandas-delta/">
         Pandas – Get delta of two dates
       </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
 <label class="md-nav__link" for="__nav_5">
           PowerShell
           <span class="md-nav__icon md-icon"></span>
@@ -256,35 +253,36 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../consolidation-alert/">
+<a class="md-nav__link" href="../powershell-consolidation-alert/">
         Send An Alert If a VM Needs Consolidation
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../automatic-dns/">
+<a class="md-nav__link" href="../powershell-automatic-dns/">
         Automatically Add Multiple DNS A Records
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../shutdown-delete/">
+<a class="md-nav__link" href="../powershell-auto-shutdown-delete/">
         Shutdown and Delete Multiple VMs Automatically
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../static-ip/">
+<a class="md-nav__link" href="../powershell-static-ip/">
         Automatically set a static IP for multiple hosts
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../csv-to-dg/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
         Add Users From a CSV to a Distribution Group with PowerShell
       </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
 <label class="md-nav__link" for="__nav_6">
           SCCM
           <span class="md-nav__icon md-icon"></span>
@@ -295,33 +293,10 @@
           SCCM
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Resize or Clear Client Cache
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../sccm-client-cache/">
         Resize or Clear Client Cache
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#resize-cache-size">
-    Resize Cache Size
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#clear-cache">
-    Clear Cache
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../sccm-osd/">
@@ -359,12 +334,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../2020/">
+<a class="md-nav__link" href="../projects-2020/">
         TwentyTwenty – My First PyQt GUI App
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../vm-cloner/">
+<a class="md-nav__link" href="../projects-vm-cloner/">
         VM Cloner
       </a>
 </li>
@@ -384,7 +359,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../media-server/">
+<a class="md-nav__link" href="../homelab-media-server/">
         Media Server Automation
       </a>
 </li>
@@ -403,33 +378,24 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/Beinish/beinish-blog/edit/master/docs/client-cache.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/Beinish/beinish-blog/edit/master/docs/powershell-csv-to-dg.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1>Resize or Clear Client Cache</h1>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sccm/cache1.png"><img alt="" src="../images/sccm/cache1.png"/></a></p>
-<p>Resizing or clearing cache can be useful for many things. In this tutorial I’ll show you how I do it during my Task Sequence. I personally needed it to install Visual Studio during OSD. The default size is 5120MB which is not enough in my case.</p>
-<h3 id="resize-cache-size">Resize Cache Size</h3>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>$UIResourceMgr = New-Object -ComObject UIResource.UIResourceMgr
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a> $Cache = $UIResourceMgr.GetCacheInfo()
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a> $Cache.TotalSize = 25600
+<h1>Add Users From a CSV to a Distribution Group with PowerShell</h1>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/powershell/dg.png"><img alt="" src="../images/powershell/dg.png"/></a></p>
+<p>If you need to add multiple users to a distribution group in Office 365, you’ll find out using the GUI can take a lot of time.
+Luckily, it only takes a CSV file and one line of code to do this automatically.</p>
+<p>First, save a CSV file with the email addresses you need, and make sure the first line is <code>displayname</code>.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/powershell/dg2.png"><img alt="" src="../images/powershell/dg2.png"/></a></p>
+<p>First, test if PowerShell reads your CSV correctly as so:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/powershell/dg3.png"><img alt="" src="../images/powershell/dg3.png"/></a></p>
+<p>If your output looks like the image above, then you’re good to go.
+The command you need to run to add the users to the distribution list is:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nb">Import-Csv</span> <span class="nv">$Location</span> <span class="p">|</span> <span class="k">foreach</span> <span class="p">{</span><span class="nb">Add-DistributionGroupMember</span> <span class="n">-Identity</span> <span class="s2">"Name of DL"</span> <span class="n">-Member</span> <span class="nv">$_</span><span class="p">.</span><span class="n">displayname</span><span class="p">}</span>
 </code></pre></div>
-<h3 id="clear-cache">Clear Cache</h3>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>$UIResourceMgr = New-Object -ComObject UIResource.UIResourceMgr
-<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a> $Cache = $UIResourceMgr.GetCacheInfo()
-<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a> $CacheElements = $Cache.GetCacheElements()
-<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a> foreach ($Element in $CacheElements) {
-<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>     $Cache.DeleteCacheElement($Element.CacheElementID)
-<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a> }
-</code></pre></div>
-<p>Save them all as .ps1 files and place in the same folder.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sccm/cache2.png"><img alt="" src="../images/sccm/cache2.png"/></a></p>
-<p>Create a package, without a program, and don’t forget to distribute it to your DP.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sccm/cache3.png"><img alt="" src="../images/sccm/cache3.png"/></a></p>
-<p>Now you can use it as a regular PS1 script in your TS as so:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sccm/cache4.png"><img alt="" src="../images/sccm/cache4.png"/></a></p>
-<p>For my TS, I increase the cache size, install all the software I need, clear it and then decrease it back to the default setting, since I don’t want it taking too much space on the hard drive.</p>
-<p>Hope this has been helpful in some way 🙂</p>
+<p>For <code>$Location</code>, just type the path to the <code>.csv</code> file. It doesn’t have to be a variable of course.
+For the <code>-Identity</code>, use the name of the group you want to add the users to.</p>
+<p>That’s it. Hope this will be useful to someone 🙂</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -441,7 +407,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Add Users From a CSV to a Distribution Group with PowerShell" class="md-footer__link md-footer__link--prev" href="../csv-to-dg/" rel="prev">
+<a aria-label="Previous: Automatically set a static IP for multiple hosts" class="md-footer__link md-footer__link--prev" href="../powershell-static-ip/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -450,17 +416,17 @@
 <span class="md-footer__direction">
                 Previous
               </span>
-              Add Users From a CSV to a Distribution Group with PowerShell
+              Automatically set a static IP for multiple hosts
             </div>
 </div>
 </a>
-<a aria-label="Next: Add a device to a collection during OSD" class="md-footer__link md-footer__link--next" href="../sccm-osd/" rel="next">
+<a aria-label="Next: Resize or Clear Client Cache" class="md-footer__link md-footer__link--next" href="../sccm-client-cache/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Add a device to a collection during OSD
+              Resize or Clear Client Cache
             </div>
 </div>
 <div class="md-footer__button md-icon">

@@ -9,7 +9,7 @@
 <meta content="Daniel Beilin" name="author"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.1, mkdocs-material-8.5.7" name="generator"/>
-<title>Add Users From a CSV to a Distribution Group with PowerShell - Beinish</title>
+<title>Automatically Add Multiple DNS A Records - Beinish</title>
 <link href="../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
 <meta content="#4051b5" name="theme-color"/>
@@ -52,7 +52,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Add Users From a CSV to a Distribution Group with PowerShell
+              Automatically Add Multiple DNS A Records
             
           </span>
 </div>
@@ -110,37 +110,37 @@
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../direnv/">
+<a class="md-tabs__link" href="../general-direnv/">
         General
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../ssm-patch-group/">
+<a class="md-tabs__link" href="../aws-ssm-patchgroup/">
         AWS
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../pandas-delta/">
+<a class="md-tabs__link" href="../python-pandas-delta/">
         Python
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="../consolidation-alert/">
+<a class="md-tabs__link md-tabs__link--active" href="../powershell-consolidation-alert/">
         PowerShell
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../client-cache/">
+<a class="md-tabs__link" href="../sccm-client-cache/">
         SCCM
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../2020/">
+<a class="md-tabs__link" href="../projects-2020/">
         My Projects
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../media-server/">
+<a class="md-tabs__link" href="../homelab-media-server/">
         Home Lab
       </a>
 </li>
@@ -193,7 +193,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../direnv/">
+<a class="md-nav__link" href="../general-direnv/">
         Switch Between AWS Credentials With Direnv
       </a>
 </li>
@@ -213,7 +213,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../ssm-patch-group/">
+<a class="md-nav__link" href="../aws-ssm-patchgroup/">
         Add Multiple Instances To a Patch Group in SSM
       </a>
 </li>
@@ -233,7 +233,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../pandas-delta/">
+<a class="md-nav__link" href="../python-pandas-delta/">
         Pandas – Get delta of two dates
       </a>
 </li>
@@ -253,28 +253,28 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../consolidation-alert/">
+<a class="md-nav__link" href="../powershell-consolidation-alert/">
         Send An Alert If a VM Needs Consolidation
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../automatic-dns/">
-        Automatically Add Multiple DNS A Records
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../shutdown-delete/">
-        Shutdown and Delete Multiple VMs Automatically
-      </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../static-ip/">
-        Automatically set a static IP for multiple hosts
       </a>
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <a class="md-nav__link md-nav__link--active" href="./">
+        Automatically Add Multiple DNS A Records
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../powershell-auto-shutdown-delete/">
+        Shutdown and Delete Multiple VMs Automatically
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../powershell-static-ip/">
+        Automatically set a static IP for multiple hosts
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../powershell-csv-to-dg/">
         Add Users From a CSV to a Distribution Group with PowerShell
       </a>
 </li>
@@ -294,7 +294,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../client-cache/">
+<a class="md-nav__link" href="../sccm-client-cache/">
         Resize or Clear Client Cache
       </a>
 </li>
@@ -334,12 +334,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../2020/">
+<a class="md-nav__link" href="../projects-2020/">
         TwentyTwenty – My First PyQt GUI App
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../vm-cloner/">
+<a class="md-nav__link" href="../projects-vm-cloner/">
         VM Cloner
       </a>
 </li>
@@ -359,7 +359,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../media-server/">
+<a class="md-nav__link" href="../homelab-media-server/">
         Media Server Automation
       </a>
 </li>
@@ -378,24 +378,26 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/Beinish/beinish-blog/edit/master/docs/csv-to-dg.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/Beinish/beinish-blog/edit/master/docs/powershell-automatic-dns.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1>Add Users From a CSV to a Distribution Group with PowerShell</h1>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/powershell/dg.png"><img alt="" src="../images/powershell/dg.png"/></a></p>
-<p>If you need to add multiple users to a distribution group in Office 365, you’ll find out using the GUI can take a lot of time.
-Luckily, it only takes a CSV file and one line of code to do this automatically.</p>
-<p>First, save a CSV file with the email addresses you need, and make sure the first line is <code>displayname</code>.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/powershell/dg2.png"><img alt="" src="../images/powershell/dg2.png"/></a></p>
-<p>First, test if PowerShell reads your CSV correctly as so:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/powershell/dg3.png"><img alt="" src="../images/powershell/dg3.png"/></a></p>
-<p>If your output looks like the image above, then you’re good to go.
-The command you need to run to add the users to the distribution list is:</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nb">Import-Csv</span> <span class="nv">$Location</span> <span class="p">|</span> <span class="k">foreach</span> <span class="p">{</span><span class="nb">Add-DistributionGroupMember</span> <span class="n">-Identity</span> <span class="s2">"Name of DL"</span> <span class="n">-Member</span> <span class="nv">$_</span><span class="p">.</span><span class="n">displayname</span><span class="p">}</span>
+<h1>Automatically Add Multiple DNS A Records</h1>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/dns/dns.png"><img alt="" src="../images/dns/dns.png"/></a></p>
+<p>If you need to add multiple A records to your DNS, here’s a quick way to do so.</p>
+<p>Create a CSV file, name it however you like (make sure you correct the name of the file in the script itself).
+Then, the first row should be filled with the words “Hostname” and “IP”. You can change that as wel but once again, make sure you edit the script accordingly.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/dns/excel.png"><img alt="" src="../images/dns/excel.png"/></a></p>
+<p>Then, edit this script with your relevant information like the CSV filename, zone name, and your DC.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nv">$IPs</span> <span class="p">=</span> <span class="nb">Import-Csv</span> <span class="s2">"C:\temp\dnsIPs.csv"</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">foreach</span> <span class="p">(</span><span class="nv">$item</span> <span class="k">in</span> <span class="nv">$IPs</span><span class="p">)</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="p">{</span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>    <span class="nv">$hostname</span> <span class="p">=</span> <span class="nv">$item</span><span class="p">.(</span><span class="s2">"Hostname"</span><span class="p">)</span>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>    <span class="nv">$IP</span> <span class="p">=</span> <span class="nv">$item</span><span class="p">.(</span><span class="s2">"IP"</span><span class="p">)</span>
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>    <span class="nb">Add-DnsServerResourceRecordA</span> <span class="n">-Name</span> <span class="nv">$hostname</span> <span class="n">-ZoneName</span> <span class="s2">"yourcorp.com"</span> <span class="n">-IPv4Address</span> <span class="nv">$IP</span> <span class="n">-ComputerName</span> <span class="s2">"DC1"</span> <span class="n">-AsJob</span>
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a>    <span class="nb">Get-Job</span> <span class="p">|</span> <span class="nb">Stop-Job</span>
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="p">}</span>
 </code></pre></div>
-<p>For <code>$Location</code>, just type the path to the <code>.csv</code> file. It doesn’t have to be a variable of course.
-For the <code>-Identity</code>, use the name of the group you want to add the users to.</p>
-<p>That’s it. Hope this will be useful to someone 🙂</p>
+<p>That’s it, now run it and watch it go 🙂</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -407,7 +409,7 @@ For the <code>-Identity</code>, use the name of the group you want to add the us
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Automatically set a static IP for multiple hosts" class="md-footer__link md-footer__link--prev" href="../static-ip/" rel="prev">
+<a aria-label="Previous: Send An Alert If a VM Needs Consolidation" class="md-footer__link md-footer__link--prev" href="../powershell-consolidation-alert/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -416,17 +418,17 @@ For the <code>-Identity</code>, use the name of the group you want to add the us
 <span class="md-footer__direction">
                 Previous
               </span>
-              Automatically set a static IP for multiple hosts
+              Send An Alert If a VM Needs Consolidation
             </div>
 </div>
 </a>
-<a aria-label="Next: Resize or Clear Client Cache" class="md-footer__link md-footer__link--next" href="../client-cache/" rel="next">
+<a aria-label="Next: Shutdown and Delete Multiple VMs Automatically" class="md-footer__link md-footer__link--next" href="../powershell-auto-shutdown-delete/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Resize or Clear Client Cache
+              Shutdown and Delete Multiple VMs Automatically
             </div>
 </div>
 <div class="md-footer__button md-icon">

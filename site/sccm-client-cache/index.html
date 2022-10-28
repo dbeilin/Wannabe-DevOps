@@ -9,7 +9,7 @@
 <meta content="Daniel Beilin" name="author"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.1, mkdocs-material-8.5.7" name="generator"/>
-<title>Automatically Add Multiple DNS A Records - Beinish</title>
+<title>Resize or Clear Client Cache - Beinish</title>
 <link href="../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
 <meta content="#4051b5" name="theme-color"/>
@@ -31,6 +31,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#resize-cache-size">
+          Skip to content
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -52,7 +55,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Automatically Add Multiple DNS A Records
+              Resize or Clear Client Cache
             
           </span>
 </div>
@@ -110,37 +113,37 @@
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../direnv/">
+<a class="md-tabs__link" href="../general-direnv/">
         General
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../ssm-patch-group/">
+<a class="md-tabs__link" href="../aws-ssm-patchgroup/">
         AWS
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../pandas-delta/">
+<a class="md-tabs__link" href="../python-pandas-delta/">
         Python
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="../consolidation-alert/">
+<a class="md-tabs__link" href="../powershell-consolidation-alert/">
         PowerShell
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../client-cache/">
+<a class="md-tabs__link md-tabs__link--active" href="./">
         SCCM
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../2020/">
+<a class="md-tabs__link" href="../projects-2020/">
         My Projects
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../media-server/">
+<a class="md-tabs__link" href="../homelab-media-server/">
         Home Lab
       </a>
 </li>
@@ -193,7 +196,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../direnv/">
+<a class="md-nav__link" href="../general-direnv/">
         Switch Between AWS Credentials With Direnv
       </a>
 </li>
@@ -213,7 +216,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../ssm-patch-group/">
+<a class="md-nav__link" href="../aws-ssm-patchgroup/">
         Add Multiple Instances To a Patch Group in SSM
       </a>
 </li>
@@ -233,15 +236,15 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../pandas-delta/">
+<a class="md-nav__link" href="../python-pandas-delta/">
         Pandas – Get delta of two dates
       </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
 <label class="md-nav__link" for="__nav_5">
           PowerShell
           <span class="md-nav__icon md-icon"></span>
@@ -253,36 +256,35 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../consolidation-alert/">
+<a class="md-nav__link" href="../powershell-consolidation-alert/">
         Send An Alert If a VM Needs Consolidation
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../powershell-automatic-dns/">
         Automatically Add Multiple DNS A Records
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../shutdown-delete/">
+<a class="md-nav__link" href="../powershell-auto-shutdown-delete/">
         Shutdown and Delete Multiple VMs Automatically
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../static-ip/">
+<a class="md-nav__link" href="../powershell-static-ip/">
         Automatically set a static IP for multiple hosts
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../csv-to-dg/">
+<a class="md-nav__link" href="../powershell-csv-to-dg/">
         Add Users From a CSV to a Distribution Group with PowerShell
       </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" id="__nav_6" type="checkbox"/>
 <label class="md-nav__link" for="__nav_6">
           SCCM
           <span class="md-nav__icon md-icon"></span>
@@ -293,10 +295,33 @@
           SCCM
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../client-cache/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Resize or Clear Client Cache
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
         Resize or Clear Client Cache
       </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#resize-cache-size">
+    Resize Cache Size
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#clear-cache">
+    Clear Cache
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../sccm-osd/">
@@ -334,12 +359,12 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../2020/">
+<a class="md-nav__link" href="../projects-2020/">
         TwentyTwenty – My First PyQt GUI App
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../vm-cloner/">
+<a class="md-nav__link" href="../projects-vm-cloner/">
         VM Cloner
       </a>
 </li>
@@ -359,7 +384,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../media-server/">
+<a class="md-nav__link" href="../homelab-media-server/">
         Media Server Automation
       </a>
 </li>
@@ -378,26 +403,33 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/Beinish/beinish-blog/edit/master/docs/automatic-dns.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/Beinish/beinish-blog/edit/master/docs/sccm-client-cache.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1>Automatically Add Multiple DNS A Records</h1>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/dns/dns.png"><img alt="" src="../images/dns/dns.png"/></a></p>
-<p>If you need to add multiple A records to your DNS, here’s a quick way to do so.</p>
-<p>Create a CSV file, name it however you like (make sure you correct the name of the file in the script itself).
-Then, the first row should be filled with the words “Hostname” and “IP”. You can change that as wel but once again, make sure you edit the script accordingly.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/dns/excel.png"><img alt="" src="../images/dns/excel.png"/></a></p>
-<p>Then, edit this script with your relevant information like the CSV filename, zone name, and your DC.</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nv">$IPs</span> <span class="p">=</span> <span class="nb">Import-Csv</span> <span class="s2">"C:\temp\dnsIPs.csv"</span>
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">foreach</span> <span class="p">(</span><span class="nv">$item</span> <span class="k">in</span> <span class="nv">$IPs</span><span class="p">)</span>
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="p">{</span>
-<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>    <span class="nv">$hostname</span> <span class="p">=</span> <span class="nv">$item</span><span class="p">.(</span><span class="s2">"Hostname"</span><span class="p">)</span>
-<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>    <span class="nv">$IP</span> <span class="p">=</span> <span class="nv">$item</span><span class="p">.(</span><span class="s2">"IP"</span><span class="p">)</span>
-<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>    <span class="nb">Add-DnsServerResourceRecordA</span> <span class="n">-Name</span> <span class="nv">$hostname</span> <span class="n">-ZoneName</span> <span class="s2">"yourcorp.com"</span> <span class="n">-IPv4Address</span> <span class="nv">$IP</span> <span class="n">-ComputerName</span> <span class="s2">"DC1"</span> <span class="n">-AsJob</span>
-<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a>    <span class="nb">Get-Job</span> <span class="p">|</span> <span class="nb">Stop-Job</span>
-<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="p">}</span>
+<h1>Resize or Clear Client Cache</h1>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sccm/cache1.png"><img alt="" src="../images/sccm/cache1.png"/></a></p>
+<p>Resizing or clearing cache can be useful for many things. In this tutorial I’ll show you how I do it during my Task Sequence. I personally needed it to install Visual Studio during OSD. The default size is 5120MB which is not enough in my case.</p>
+<h3 id="resize-cache-size">Resize Cache Size</h3>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>$UIResourceMgr = New-Object -ComObject UIResource.UIResourceMgr
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a> $Cache = $UIResourceMgr.GetCacheInfo()
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a> $Cache.TotalSize = 25600
 </code></pre></div>
-<p>That’s it, now run it and watch it go 🙂</p>
+<h3 id="clear-cache">Clear Cache</h3>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>$UIResourceMgr = New-Object -ComObject UIResource.UIResourceMgr
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a> $Cache = $UIResourceMgr.GetCacheInfo()
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a> $CacheElements = $Cache.GetCacheElements()
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a> foreach ($Element in $CacheElements) {
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>     $Cache.DeleteCacheElement($Element.CacheElementID)
+<a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a> }
+</code></pre></div>
+<p>Save them all as .ps1 files and place in the same folder.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sccm/cache2.png"><img alt="" src="../images/sccm/cache2.png"/></a></p>
+<p>Create a package, without a program, and don’t forget to distribute it to your DP.</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sccm/cache3.png"><img alt="" src="../images/sccm/cache3.png"/></a></p>
+<p>Now you can use it as a regular PS1 script in your TS as so:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sccm/cache4.png"><img alt="" src="../images/sccm/cache4.png"/></a></p>
+<p>For my TS, I increase the cache size, install all the software I need, clear it and then decrease it back to the default setting, since I don’t want it taking too much space on the hard drive.</p>
+<p>Hope this has been helpful in some way 🙂</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -409,7 +441,7 @@ Then, the first row should be filled with the words “Hostname” and “IP”.
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Send An Alert If a VM Needs Consolidation" class="md-footer__link md-footer__link--prev" href="../consolidation-alert/" rel="prev">
+<a aria-label="Previous: Add Users From a CSV to a Distribution Group with PowerShell" class="md-footer__link md-footer__link--prev" href="../powershell-csv-to-dg/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -418,17 +450,17 @@ Then, the first row should be filled with the words “Hostname” and “IP”.
 <span class="md-footer__direction">
                 Previous
               </span>
-              Send An Alert If a VM Needs Consolidation
+              Add Users From a CSV to a Distribution Group with PowerShell
             </div>
 </div>
 </a>
-<a aria-label="Next: Shutdown and Delete Multiple VMs Automatically" class="md-footer__link md-footer__link--next" href="../shutdown-delete/" rel="next">
+<a aria-label="Next: Add a device to a collection during OSD" class="md-footer__link md-footer__link--next" href="../sccm-osd/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Shutdown and Delete Multiple VMs Automatically
+              Add a device to a collection during OSD
             </div>
 </div>
 <div class="md-footer__button md-icon">
