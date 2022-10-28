@@ -1,10 +1,10 @@
-![](images/powershell/shutdown-delete1.png)
+![](images/powershell/auto-shutdown-delete/shutdown-delete1.png)
 
 This is a simple script to shutdown and delete multiple VMs at once in VMware.
 
 Make sure you have a list of VMs in a text file. It’s simple to export a list of VMs in a certain folder in your vcenter, but just as an example, it should look like this:
 
-![](images/powershell/shutdown-delete2.png)
+![](images/powershell/auto-shutdown-delete/shutdown-delete2.png)
 
 Then, here’s the script, run it:
 

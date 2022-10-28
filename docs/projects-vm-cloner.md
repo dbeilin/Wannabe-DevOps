@@ -1,4 +1,4 @@
-![](images/vm-cloner/vm-cloner.png)
+![](images/projects/vm-cloner/vm-cloner.png)
 
 VM Cloner is just a hobby project I wrote to allow myself to clone VMs in our vSphere environment.
 

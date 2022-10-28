@@ -1,4 +1,4 @@
-![twentytwenty](images/twentytwenty/twentytwenty.png)
+![twentytwenty](images/projects/twentytwenty/twentytwenty.png)
 
 TwentyTwenty is a simple PyQt app that I wrote.
 
@@ -11,7 +11,7 @@ This app is based on the 20-20-20 rule which you can read about in the links bel
 
 The app runs in the background and notifies you with a Windows 10 Toast + Sound notificaiton when it’s time to look away and look back.
 
-![not1](images/twentytwenty/notification.png) ![not2](images/twentytwenty/notification1.png)
+![not1](images/projects/twentytwenty/notification.png) ![not2](images/projects/twentytwenty/notification1.png)
 
 By no means should you consider this app as an alternative to a medical exam. If you feel any pain or discomfort while working on your computer, you should consult a medical professional. You can read more about the 20-20-20 rule here:
 

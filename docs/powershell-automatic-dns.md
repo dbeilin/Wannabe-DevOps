@@ -1,11 +1,11 @@
-![](images/dns/dns.png)
+![](images/powershell/dns/dns.png)
 
 If you need to add multiple A records to your DNS, here’s a quick way to do so.
 
 Create a CSV file, name it however you like (make sure you correct the name of the file in the script itself).
 Then, the first row should be filled with the words “Hostname” and “IP”. You can change that as wel but once again, make sure you edit the script accordingly.
 
-![](images/dns/excel.png)
+![](images/powershell/dns/excel.png)
 
 Then, edit this script with your relevant information like the CSV filename, zone name, and your DC.
 
