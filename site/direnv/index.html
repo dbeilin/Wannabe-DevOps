@@ -7,17 +7,17 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="My docs" name="description"/>
 <meta content="Daniel Beilin" name="author"/>
-<link href="assets/images/favicon.png" rel="icon"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.1, mkdocs-material-8.5.7" name="generator"/>
-<title>Beinish</title>
-<link href="assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
-<link href="assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
+<title>Switch Between AWS Credentials With Direnv - Beinish</title>
+<link href="../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
 <meta content="#4051b5" name="theme-color"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-<link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
             .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
@@ -25,13 +25,13 @@
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
-                </style><script src="assets/javascripts/glightbox.min.js"></script></head>
+                </style><script src="../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#welcome-to-mkdocs">
+<a class="md-skip" href="#direnv">
           Skip to content
         </a>
 </div>
@@ -39,7 +39,7 @@
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="Beinish" class="md-header__button md-logo" data-md-component="logo" href="." title="Beinish">
+<a aria-label="Beinish" class="md-header__button md-logo" data-md-component="logo" href=".." title="Beinish">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
@@ -55,7 +55,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Home
+              Switch Between AWS Credentials With Direnv
             
           </span>
 </div>
@@ -108,22 +108,22 @@
 <div class="md-tabs__inner md-grid">
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href=".">
+<a class="md-tabs__link" href="..">
       Home
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="about/">
+<a class="md-tabs__link" href="../about/">
       About
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="direnv/">
+<a class="md-tabs__link md-tabs__link--active" href="./">
         General
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="Add Multiple Instances To a Patch Group in SSM">
+<a class="md-tabs__link" href="../Add Multiple Instances To a Patch Group in SSM">
         AWS
       </a>
 </li>
@@ -137,7 +137,7 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="Beinish" class="md-nav__button md-logo" data-md-component="logo" href="." title="Beinish">
+<a aria-label="Beinish" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Beinish">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
 </a>
     Beinish
@@ -153,41 +153,18 @@
 </a>
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-          Home
-          <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href=".">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
         Home
       </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#commands">
-    Commands
-  </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#project-layout">
-    Project layout
-  </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="about/">
+<a class="md-nav__link" href="../about/">
         About
       </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3">
           General
           <span class="md-nav__icon md-icon"></span>
@@ -198,13 +175,14 @@
           General
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="direnv/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
         Switch Between AWS Credentials With Direnv
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="ssm-patch-group/">
+<a class="md-nav__link" href="../ssm-patch-group/">
         Add Multiple Instances To a Patch Group in SSM
       </a>
 </li>
@@ -224,7 +202,7 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="Add Multiple Instances To a Patch Group in SSM">
+<a class="md-nav__link" href="../Add Multiple Instances To a Patch Group in SSM">
         None
       </a>
 </li>
@@ -238,24 +216,73 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/Beinish/beinish-blog/edit/master/docs/index.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/Beinish/beinish-blog/edit/master/docs/direnv.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h1 id="direnv">Direnv</h1>
+<p>If you’re bouncing between multiple AWS accounts or credentials in your CLI, this tool might be a huge quality of life perk for you.</p>
+<p>Basically, direnv can load and unload environment variables depending on the current directory you’re in. In this post I’ll show how to use it to switch between AWS credentials.</p>
+<p>Let’s start with a real world example right of the bat:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>~/playground master* ❯ ls -l
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>total <span class="m">20</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>drwxr-xr-x <span class="m">2</span> dbei dbei <span class="m">4096</span> Apr <span class="m">21</span> <span class="m">09</span>:37 project1
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>drwxr-xr-x <span class="m">2</span> dbei dbei <span class="m">4096</span> Apr <span class="m">21</span> <span class="m">09</span>:37 project2
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>~/playground master* 
+</code></pre></div></p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>Project1 will use AWS Account #1</li>
+<li>Project2 will use AWS Account #2</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<div class="highlight"><pre><span></span><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+<p><strong>Let’s start with Project1:</strong></p>
+<ol>
+<li>
+<p>Setup <a href="https://direnv.net/">direnv</a>.</p>
+</li>
+<li>
+<p>cd into your desired directory. In my case it would be <code>project1</code>.</p>
+</li>
+<li>
+<p>Create <strong>.envrc</strong>: <code>vi .envrc</code></p>
+</li>
+<li>
+<p>Add your AWS credentials which you can generate in IAM:
+   <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>export AWS_ACCESS_KEY_ID=AKIAZXIDSFDSNTLBJWC
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>export AWS_DEFAULT_REGION=eu-west-1
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>export AWS_SECRET_ACCESS_KEY=KJuja33rTxIlK/wee/DsdrdhjKKg/HDrmtreDJ
+</code></pre></div></p>
+</li>
+<li>
+<p><code>cd</code> in and out of that directory.</p>
+</li>
+<li>
+<p>You should see an error: </p>
+<details class="error" open="open">
+<summary>Error</summary>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>direnv: error /playground/project1/.envrc is blocked. Run direnv allow to approve its content
 </code></pre></div>
+</details>
+</li>
+<li>
+<p>Type <code>direnv allow</code> and you should be good:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>~/playground/project1 master* ❯ direnv allow
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>direnv: loading ~/playground/project1/.envrc
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>direnv: <span class="nb">export</span> ~AWS_DEFAULT_REGION
+</code></pre></div></p>
+</li>
+<li>
+<p>You can test that it works with any AWS CLI command. For example:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>~/playground/project1 master* ❯ aws s3 ls
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="m">2022</span>-03-22 <span class="m">16</span>:35:07 daniel-awesome-bucket
+<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="m">2022</span>-04-21 <span class="m">09</span>:18:52 <span class="k">do</span>-not-delete-gatedgarden-audit-384466123559
+<a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a>~/playground/project1 master* ❯
+</code></pre></div></p>
+</li>
+</ol>
+<p>Repeat the same process for Project2 and use different credentials. After that, you should be set. From here you can move between folders, which will automatically move between your AWS credentials and accounts!</p>
+<details class="tip" open="open">
+<summary>Tip</summary>
+<p>Don’t forget to add <code>.envrc</code> to your <code>.gitignore</code>!</p>
+</details>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -267,13 +294,26 @@ docs/
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Next: About" class="md-footer__link md-footer__link--next" href="about/" rel="next">
+<a aria-label="Previous: About" class="md-footer__link md-footer__link--prev" href="../about/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              About
+            </div>
+</div>
+</a>
+<a aria-label="Next: Add Multiple Instances To a Patch Group in SSM" class="md-footer__link md-footer__link--next" href="../ssm-patch-group/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              About
+              Add Multiple Instances To a Patch Group in SSM
             </div>
 </div>
 <div class="md-footer__button md-icon">
@@ -303,7 +343,7 @@ docs/
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": ".", "features": ["navigation.tracking", "navigation.tabs", "navigation.expand", "navigation.top", "toc.integrate", "content.code.annotate", "content.tabs.link"], "search": "assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
-<script src="assets/javascripts/bundle.8492ddcf.min.js"></script>
+<script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.tabs", "navigation.expand", "navigation.top", "toc.integrate", "content.code.annotate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.8492ddcf.min.js"></script>
 <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
 </html>
