@@ -1,4 +1,4 @@
-![](images/powershell/consolidation.png){ align=center }
+![](images/powershell/consolidation.png)
 
 So you might have a few alerts already set thanks to a lot of public tools out there, but if you want to get an alert about a VM that needs consolidation without installing or buying anything, you can use a simple and short PowerShell script.
 

@@ -23,9 +23,13 @@ nav:
         - 'Resize or Clear Client Cache': 'client-cache.md'
         - 'Add a device to a collection during OSD': 'sccm-osd.md'
         - 'Deploy Visual Studio 2017 with SCCM': 'sccm-vs.md'
+        - 'Set a Power Plan in SCCM': 'sccm-power-plan.md'
+        - 'Apply drivers in SCCM – The Easy Way': 'sccm-drivers.md'
     - 'My Projects':
         - 'TwentyTwenty – My First PyQt GUI App': '2020.md'
         - 'VM Cloner': 'vm-cloner.md'
+    - 'Home Lab':
+        - 'Media Server Automation': 'media-server.md'
     - About: about.md
 
 markdown_extensions:
