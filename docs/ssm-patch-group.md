@@ -51,4 +51,4 @@ The first loop iterates over all of the instances in SSM, and if the instance’
 The second loop goes over the list of instances we just filled and simply creates the tags we configured.
 As you can see, by running we get our desired result:
 
-![alt](../site/assets/images/ssm-patch-group/LLZvZ75.png)
+![alt](https://i.imgur.com/LLZvZ75.png)
