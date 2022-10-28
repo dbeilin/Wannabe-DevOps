@@ -10,9 +10,8 @@ nav:
     - About: about.md
     - 'General':
         - 'Switch Between AWS Credentials With Direnv': 'direnv.md'
-        - 'Add Multiple Instances To a Patch Group in SSM': 'ssm-patch-group.md'
     - 'AWS':
-        - 'Add Multiple Instances To a Patch Group in SSM'
+        - 'Add Multiple Instances To a Patch Group in SSM': 'ssm-patch-group.md'
 
 markdown_extensions:
   - attr_list
