@@ -140,6 +140,11 @@
       </a>
 </li>
 <li class="md-tabs__item">
+<a class="md-tabs__link" href="../media-server/">
+        Home Lab
+      </a>
+</li>
+<li class="md-tabs__item">
 <a class="md-tabs__link" href="../about/">
       About
     </a>
@@ -303,6 +308,16 @@
         Deploy Visual Studio 2017 with SCCM
       </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../sccm-power-plan/">
+        Set a Power Plan in SCCM
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../sccm-drivers/">
+        Apply drivers in SCCM – The Easy Way
+      </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -326,6 +341,26 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../vm-cloner/">
         VM Cloner
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_8" id="__nav_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_8">
+          Home Lab
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Home Lab" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_8">
+<span class="md-nav__icon md-icon"></span>
+          Home Lab
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../media-server/">
+        Media Server Automation
       </a>
 </li>
 </ul>
@@ -393,7 +428,7 @@ In my example, I only add the tags to EC2 instances, but the same logic applies 
 <p>The first loop iterates over all of the instances in SSM, and if the instance’s OS is Amazon Linux 2, it gets added to a list of instances.</p>
 <p>The second loop goes over the list of instances we just filled and simply creates the tags we configured.
 As you can see, by running we get our desired result:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="ssm-patch-group/LLZvZ75.png"><img alt="" src="ssm-patch-group/LLZvZ75.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/ssm-patch-group/ssm1.png"><img alt="" src="../images/ssm-patch-group/ssm1.png"/></a></p>
 <p>The same logic can be applied to SSM Managed Instances. Instead of using the EC2 boto3 client, we can utilize the same SSM client we already have and use the <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.add_tags_to_resource">add_tags_to_resource</a> function:
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">add_tags_to_resource</span><span class="p">(</span>
 <a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>    <span class="n">ResourceType</span><span class="o">=</span><span class="s1">'Document'</span><span class="o">|</span><span class="s1">'ManagedInstance'</span><span class="o">|</span><span class="s1">'MaintenanceWindow'</span><span class="o">|</span><span class="s1">'Parameter'</span><span class="o">|</span><span class="s1">'PatchBaseline'</span><span class="o">|</span><span class="s1">'OpsItem'</span><span class="o">|</span><span class="s1">'OpsMetadata'</span><span class="p">,</span>

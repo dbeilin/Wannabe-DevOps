@@ -51,7 +51,7 @@ The first loop iterates over all of the instances in SSM, and if the instance’
 The second loop goes over the list of instances we just filled and simply creates the tags we configured.
 As you can see, by running we get our desired result:
 
-![](ssm-patch-group/LLZvZ75.png)
+![](images/ssm-patch-group/ssm1.png)
 
 The same logic can be applied to SSM Managed Instances. Instead of using the EC2 boto3 client, we can utilize the same SSM client we already have and use the [add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.add_tags_to_resource) function:
 ```py
