@@ -9,7 +9,7 @@
 <meta content="Daniel Beilin" name="author"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.4.1, mkdocs-material-8.5.7" name="generator"/>
-<title>Switch Between AWS Credentials With Direnv - Beinish</title>
+<title>Pandas – Get delta of two dates - Beinish</title>
 <link href="../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.cbb835fc.min.css" rel="stylesheet"/>
 <meta content="#4051b5" name="theme-color"/>
@@ -31,9 +31,6 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#direnv">
-          Skip to content
-        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -55,7 +52,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Switch Between AWS Credentials With Direnv
+              Pandas – Get delta of two dates
             
           </span>
 </div>
@@ -113,7 +110,7 @@
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link md-tabs__link--active" href="./">
+<a class="md-tabs__link" href="../direnv/">
         General
       </a>
 </li>
@@ -123,7 +120,7 @@
       </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../pandas-delta/">
+<a class="md-tabs__link md-tabs__link--active" href="./">
         Python
       </a>
 </li>
@@ -178,8 +175,8 @@
         Home
       </a>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2">
           General
           <span class="md-nav__icon md-icon"></span>
@@ -190,9 +187,8 @@
           General
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../direnv/">
         Switch Between AWS Credentials With Direnv
       </a>
 </li>
@@ -219,8 +215,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
 <label class="md-nav__link" for="__nav_4">
           Python
           <span class="md-nav__icon md-icon"></span>
@@ -231,8 +227,9 @@
           Python
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../pandas-delta/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
         Pandas – Get delta of two dates
       </a>
 </li>
@@ -346,73 +343,66 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/Beinish/beinish-blog/edit/master/docs/direnv.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/Beinish/beinish-blog/edit/master/docs/pandas-delta.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<h1 id="direnv">Direnv</h1>
-<p>If you’re bouncing between multiple AWS accounts or credentials in your CLI, this tool might be a huge quality of life perk for you.</p>
-<p>Basically, direnv can load and unload environment variables depending on the current directory you’re in. In this post I’ll show how to use it to switch between AWS credentials.</p>
-<p>Let’s start with a real world example right of the bat:
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>~/playground master* ❯ ls -l
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>total <span class="m">20</span>
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>drwxr-xr-x <span class="m">2</span> dbei dbei <span class="m">4096</span> Apr <span class="m">21</span> <span class="m">09</span>:37 project1
-<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>drwxr-xr-x <span class="m">2</span> dbei dbei <span class="m">4096</span> Apr <span class="m">21</span> <span class="m">09</span>:37 project2
-<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>~/playground master* 
-</code></pre></div></p>
-<ul>
-<li>Project1 will use AWS Account #1</li>
-<li>Project2 will use AWS Account #2</li>
-</ul>
-<p><strong>Let’s start with Project1:</strong></p>
-<ol>
-<li>
-<p>Setup <a href="https://direnv.net/">direnv</a>.</p>
-</li>
-<li>
-<p>cd into your desired directory. In my case it would be <code>project1</code>.</p>
-</li>
-<li>
-<p>Create <strong>.envrc</strong>: <code>vi .envrc</code></p>
-</li>
-<li>
-<p>Add your AWS credentials which you can generate in IAM:
-   <div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>export AWS_ACCESS_KEY_ID=AKIAZXIDSFDSNTLBJWC
-<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>export AWS_DEFAULT_REGION=eu-west-1
-<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>export AWS_SECRET_ACCESS_KEY=KJuja33rTxIlK/wee/DsdrdhjKKg/HDrmtreDJ
-</code></pre></div></p>
-</li>
-<li>
-<p><code>cd</code> in and out of that directory.</p>
-</li>
-<li>
-<p>You should see an error: </p>
-<details class="error" open="open">
-<summary>Error</summary>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>direnv: error /playground/project1/.envrc is blocked. Run direnv allow to approve its content
+<h1>Pandas – Get delta of two dates</h1>
+<p>I automated a silly task as a beginner’s project in Python. It was a nice learning experience as I don’t do this quite often.</p>
+<p>So we have a list of upcoming new employees in an Excel file. It has their name and start date. There are a few people in our office that need a reminder that new people are joining, so this script sends them that email with all the details.</p>
+<p>Generally, if there’s a new employee on that list that starts in less than 10 days, it adds him to a table and sends that in an email. I run this script in a cron-job once a week at the same hour.</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">datetime</span> <span class="k">as</span> <span class="nn">dt</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">import</span> <span class="nn">smtplib</span><span class="o">,</span> <span class="nn">ssl</span>
+<a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kn">from</span> <span class="nn">email.mime.multipart</span> <span class="kn">import</span> <span class="n">MIMEMultipart</span>
+<a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="k">def</span> <span class="nf">sendEmail</span><span class="p">():</span>
+<a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a>    <span class="n">sender_email</span> <span class="o">=</span> <span class="s2">""</span>
+<a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a>    <span class="n">receiver_email</span> <span class="o">=</span> <span class="s2">""</span>
+<a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a>
+<a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a>    <span class="n">message</span> <span class="o">=</span> <span class="n">MIMEMultipart</span><span class="p">(</span><span class="s2">"alternative"</span><span class="p">)</span>
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a>    <span class="n">message</span><span class="p">[</span><span class="s2">"Subject"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"New Employees Reminder"</span>
+<a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a>    <span class="n">message</span><span class="p">[</span><span class="s2">"From"</span><span class="p">]</span> <span class="o">=</span> <span class="n">sender_email</span>
+<a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a>    <span class="n">message</span><span class="p">[</span><span class="s2">"To"</span><span class="p">]</span> <span class="o">=</span> <span class="n">receiver_email</span>
+<a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a>
+<a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a>    <span class="c1"># Create the plain-text and HTML version of your message</span>
+<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a>    <span class="n">text</span> <span class="o">=</span> <span class="s2">"""</span>
+<a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="s2">    Test</span>
+<a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="s2">    """</span>
+<a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a>    <span class="c1">#Open the HTML file we created because we don't want to output raw HTML code. This adds the new employees table to the email.</span>
+<a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'employees.html'</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
+<a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a>        <span class="n">html</span> <span class="o">=</span> <span class="n">fp</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a href="#__codelineno-0-22" id="__codelineno-0-22" name="__codelineno-0-22"></a>
+<a href="#__codelineno-0-23" id="__codelineno-0-23" name="__codelineno-0-23"></a>    <span class="n">part1</span> <span class="o">=</span> <span class="n">MIMEText</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="s2">"plain"</span><span class="p">)</span>
+<a href="#__codelineno-0-24" id="__codelineno-0-24" name="__codelineno-0-24"></a>    <span class="n">part2</span> <span class="o">=</span> <span class="n">MIMEText</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="s2">"html"</span><span class="p">)</span>
+<a href="#__codelineno-0-25" id="__codelineno-0-25" name="__codelineno-0-25"></a>    <span class="n">message</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">part1</span><span class="p">)</span>
+<a href="#__codelineno-0-26" id="__codelineno-0-26" name="__codelineno-0-26"></a>    <span class="n">message</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">part2</span><span class="p">)</span>
+<a href="#__codelineno-0-27" id="__codelineno-0-27" name="__codelineno-0-27"></a>
+<a href="#__codelineno-0-28" id="__codelineno-0-28" name="__codelineno-0-28"></a>    <span class="k">try</span><span class="p">:</span>
+<a href="#__codelineno-0-29" id="__codelineno-0-29" name="__codelineno-0-29"></a>        <span class="n">smtpObj</span> <span class="o">=</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s1">'server'</span><span class="p">)</span>
+<a href="#__codelineno-0-30" id="__codelineno-0-30" name="__codelineno-0-30"></a>        <span class="n">smtpObj</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="n">sender_email</span><span class="p">,</span> <span class="n">receiver_email</span><span class="p">,</span> <span class="n">message</span><span class="o">.</span><span class="n">as_string</span><span class="p">())</span>         
+<a href="#__codelineno-0-31" id="__codelineno-0-31" name="__codelineno-0-31"></a>        <span class="nb">print</span> <span class="p">(</span><span class="s2">"Successfully sent email"</span><span class="p">)</span>
+<a href="#__codelineno-0-32" id="__codelineno-0-32" name="__codelineno-0-32"></a>    <span class="k">except</span> <span class="n">SMTPException</span><span class="p">:</span>
+<a href="#__codelineno-0-33" id="__codelineno-0-33" name="__codelineno-0-33"></a>        <span class="nb">print</span> <span class="p">(</span><span class="s2">"Error: unable to send email"</span><span class="p">)</span>
+<a href="#__codelineno-0-34" id="__codelineno-0-34" name="__codelineno-0-34"></a>
+<a href="#__codelineno-0-35" id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="c1">#Read the Excel file, read the specific sheet we need and take just the column we're interested in: Start Date</span>
+<a href="#__codelineno-0-36" id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="n">xls</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelFile</span><span class="p">(</span><span class="sa">r</span><span class="s1">'testfile.xlsx'</span><span class="p">)</span>
+<a href="#__codelineno-0-37" id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">xls</span><span class="p">,</span> <span class="s1">'New Employment'</span><span class="p">)</span>
+<a href="#__codelineno-0-38" id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="n">df</span><span class="p">[</span><span class="s1">'Start Date'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Start Date'</span><span class="p">])</span>
+<a href="#__codelineno-0-39" id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="n">today</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+<a href="#__codelineno-0-40" id="__codelineno-0-40" name="__codelineno-0-40"></a>
+<a href="#__codelineno-0-41" id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="c1">#Calculate how many days are left til the employee starts working using Pandas. It's a delta from today's date and the date in the Excel file.</span>
+<a href="#__codelineno-0-42" id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="n">df</span><span class="p">[</span><span class="s1">'Days Until Start'</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="n">df</span><span class="p">[</span><span class="s1">'Start Date'</span><span class="p">]</span> <span class="o">-</span> <span class="n">today</span><span class="p">)</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">days</span><span class="p">)</span>
+<a href="#__codelineno-0-43" id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="n">df</span><span class="p">[</span><span class="s1">'Days Until Start'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Days Until Start'</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<a href="#__codelineno-0-44" id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="n">delta_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">'Name'</span><span class="p">,</span> <span class="s1">'Days Until Start'</span><span class="p">]]</span>
+<a href="#__codelineno-0-45" id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="n">close_delta</span> <span class="o">=</span> <span class="n">delta_df</span><span class="p">[</span><span class="n">delta_df</span><span class="p">[</span><span class="s1">'Days Until Start'</span><span class="p">]</span><span class="o">.</span><span class="n">between</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">)]</span> <span class="c1">#Make sure the employees delta is no bigger than 0 because that means he already started working and smaller than 10 (reasonable time to prepare for a new employee)</span>
+<a href="#__codelineno-0-46" id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="n">close_delta</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span><span class="s1">'employees.html'</span><span class="p">)</span> <span class="c1">#Output the data into a table inside the HTML file which we will use for the "Send Email" function.</span>
+<a href="#__codelineno-0-47" id="__codelineno-0-47" name="__codelineno-0-47"></a>
+<a href="#__codelineno-0-48" id="__codelineno-0-48" name="__codelineno-0-48"></a><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">close_delta</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span> <span class="c1">#Check if there are any employees queued up, so it won't send an email with an empty list in case there are no new employees soon.</span>
+<a href="#__codelineno-0-49" id="__codelineno-0-49" name="__codelineno-0-49"></a>    <span class="n">sendEmail</span><span class="p">()</span>
 </code></pre></div>
-</details>
-</li>
-<li>
-<p>Type <code>direnv allow</code> and you should be good:
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>~/playground/project1 master* ❯ direnv allow
-<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>direnv: loading ~/playground/project1/.envrc
-<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>direnv: <span class="nb">export</span> ~AWS_DEFAULT_REGION
-</code></pre></div></p>
-</li>
-<li>
-<p>You can test that it works with any AWS CLI command. For example:
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>~/playground/project1 master* ❯ aws s3 ls
-<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="m">2022</span>-03-22 <span class="m">16</span>:35:07 daniel-awesome-bucket
-<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="m">2022</span>-04-21 <span class="m">09</span>:18:52 <span class="k">do</span>-not-delete-gatedgarden-audit-384466123559
-<a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a>~/playground/project1 master* ❯
-</code></pre></div></p>
-</li>
-</ol>
-<p>Repeat the same process for Project2 and use different credentials. After that, you should be set. From here you can move between folders, which will automatically move between your AWS credentials and accounts!</p>
-<details class="tip" open="open">
-<summary>Tip</summary>
-<p>Don’t forget to add <code>.envrc</code> to your <code>.gitignore</code>!</p>
-</details>
+<p>The output looks something like this:</p>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/python/pandas.png"><img alt="" src="../images/python/pandas.png"/></a></p>
+<p>Hope this will be helpful to someone 😊</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -424,7 +414,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Home" class="md-footer__link md-footer__link--prev" href=".." rel="prev">
+<a aria-label="Previous: Add Multiple Instances To a Patch Group in SSM" class="md-footer__link md-footer__link--prev" href="../ssm-patch-group/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -433,17 +423,17 @@
 <span class="md-footer__direction">
                 Previous
               </span>
-              Home
+              Add Multiple Instances To a Patch Group in SSM
             </div>
 </div>
 </a>
-<a aria-label="Next: Add Multiple Instances To a Patch Group in SSM" class="md-footer__link md-footer__link--next" href="../ssm-patch-group/" rel="next">
+<a aria-label="Next: Send An Alert If a VM Needs Consolidation" class="md-footer__link md-footer__link--next" href="../consolidation-alert/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Add Multiple Instances To a Patch Group in SSM
+              Send An Alert If a VM Needs Consolidation
             </div>
 </div>
 <div class="md-footer__button md-icon">
