@@ -2,6 +2,74 @@ site_name: Beinish
 site_description: My docs
 site_author: Daniel Beilin
 # site_url:
-
 repo_url: https://github.com/Beinish/beinish-blog
 repo_name:  Beinish/beinish-blog
+
+nav:
+    - Home: index.md
+    - About: about.md
+    - 'General':
+        - 'Switch Between AWS Credentials With Direnv': 'direnv.md'
+        - 'Add Multiple Instances To a Patch Group in SSM': 'ssm-patch-group.md'
+    - 'AWS':
+        - 'Add Multiple Instances To a Patch Group in SSM'
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - tables
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - content.code.annotate
+    - content.tabs.link
+
+  palette:
+    primary: indigo
+    scheme: slate
+
+plugins:
+  - glightbox
+  - search:
+      lang: en
+  - tags:
+      enabled: true
+      tags_slugify_separator: "-"
+  
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Beinish
+
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/daniel-beilin/
+
+  generator: false
+
+copyright: Copyright &copy; 2022 Daniel Beilin
+
+# extra_css:
+#   - stylesheets/extra.css
