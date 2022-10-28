@@ -7,11 +7,26 @@ repo_name:  Beinish/beinish-blog
 
 nav:
     - Home: index.md
-    - About: about.md
     - 'General':
         - 'Switch Between AWS Credentials With Direnv': 'direnv.md'
     - 'AWS':
         - 'Add Multiple Instances To a Patch Group in SSM': 'ssm-patch-group.md'
+    - 'Python':
+        - 'Pandas – Get delta of two dates': 'pandas-delta.md'
+    - 'PowerShell':
+        - 'Send An Alert If a VM Needs Consolidation': 'consolidation-alert.md'
+        - 'Automatically Add Multiple DNS A Records': 'automatic-dns.md'
+        - 'Shutdown and Delete Multiple VMs Automatically': 'shutdown-delete.md'
+        - 'Automatically set a static IP for multiple hosts': 'static-ip.md'
+        - 'Add Users From a CSV to a Distribution Group with PowerShell': 'csv-to-dg.md'
+    - 'SCCM':
+        - 'Resize or Clear Client Cache': 'client-cache.md'
+        - 'Add a device to a collection during OSD': 'sccm-osd.md'
+        - 'Deploy Visual Studio 2017 with SCCM': 'sccm-vs.md'
+    - 'My Projects':
+        - 'TwentyTwenty – My First PyQt GUI App': '2020.md'
+        - 'VM Cloner': 'vm-cloner.md'
+    - About: about.md
 
 markdown_extensions:
   - attr_list
