@@ -99,6 +99,16 @@ de5b28eb2fa9   portainer/portainer-ce:2.9.3   "/portainer"             2 weeks a
 
 ### Compose-File
 The following docker-compose file is configured exactly as it should, we will make some changes after running it:
+
+!!! information inline end
+    - `PUID` - Usually you can leave this on `1000`
+    - `PGID` - Same as `PUID`.
+    - You can check double check by running: `id $user`
+    - Under `volumes`, change `/mnt/data:/data` to reflect your setup. If you mounted `/mnt/data` like me, you can leave it as is.
+    - **Repeat the above step for each container that has it!**
+    - Change `TZ=` to reflect your timezone. You can find the value for your location [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+    - It doesn't matter too much where to store the config files for each container, I personally do `/docker/appdata/{app}:/config`. Instead of `{app}`, I change it to the name of the app/container I'm using.
+
 ```yaml
 version: "3.2"
 services:
@@ -233,3 +243,22 @@ services:
       - /docker/appdata/overseerr:/app/config
     restart: unless-stopped
 ```
+
+Apps in the compose file:
+
+- [Radarr](https://radarr.video/) - Managing movies.
+- [Sonarr](https://sonarr.tv/) - Managing TV shows.
+- [Bazarr](https://www.bazarr.media/) - Managing subtitles for movies and tv shows.
+- [qBitTorrent](https://www.qbittorrent.org/) - Torrent downloading client.
+- [Plex](plex.tv/) - Media player for all of our downloads.
+- [Sabnzbd](https://sabnzbd.org/) - Binary newsreader, our usenet downloader.
+- [Jackett](https://github.com/Jackett/Jackett) - This is our torrent indexer. it essentialy makes queries to torrent sites and retrives the data from them to pass on to radarr/sonarr.
+- [Overseerr](https://overseerr.dev/) - Requests manager for our media. Instead of going to any of the *arr apps, we can request media straight from this great UI.
+
+### Configure the apps
+!!! info inline end "Why?"
+    I encourage you to go an read more about [Hardlinks](https://trash-guides.info/Hardlinks/Hardlinks-and-Instant-Moves/) to understand why we're configuring how media server this way.
+
+We will be configuring the apps based on [TRaSH Guides](https://trash-guides.info/Hardlinks/Examples/) guidelines.
+
+For Radarr, Sonarr, Sabnzbd and qBittorrent, make sure you configure it as listed [here](https://trash-guides.info/Hardlinks/Examples/).
