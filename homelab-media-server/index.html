@@ -426,6 +426,11 @@
     Compose-File
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configure-the-apps">
+    Configure the apps
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -553,7 +558,19 @@ Installing Portainer is very simple, you can choose the method of installation f
 <a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>de5b28eb2fa9   portainer/portainer-ce:2.9.3   <span class="s2">"/portainer"</span>             <span class="m">2</span> weeks ago   Up <span class="m">9</span> days   <span class="m">0</span>.0.0.0:8000-&gt;8000/tcp, :::8000-&gt;8000/tcp, <span class="m">0</span>.0.0.0:9443-&gt;9443/tcp, :::9443-&gt;9443/tcp   portainer
 </code></pre></div></p>
 <h3 id="compose-file">Compose-File</h3>
-<p>The following docker-compose file is configured exactly as it should, we will make some changes after running it:
+<p>The following docker-compose file is configured exactly as it should, we will make some changes after running it:</p>
+<div class="admonition information inline end">
+<p class="admonition-title">Information</p>
+<ul>
+<li><code>PUID</code> - Usually you can leave this on <code>1000</code></li>
+<li><code>PGID</code> - Same as <code>PUID</code>.</li>
+<li>You can check double check by running: <code>id $user</code></li>
+<li>Under <code>volumes</code>, change <code>/mnt/data:/data</code> to reflect your setup. If you mounted <code>/mnt/data</code> like me, you can leave it as is.</li>
+<li><strong>Repeat the above step for each container that has it!</strong></li>
+<li>Change <code>TZ=</code> to reflect your timezone. You can find the value for your location <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">here</a>.</li>
+<li>It doesn't matter too much where to store the config files for each container, I personally do <code>/docker/appdata/{app}:/config</code>. Instead of <code>{app}</code>, I change it to the name of the app/container I'm using.</li>
+</ul>
+</div>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">"3.2"</span><span class="w"></span>
 <a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nt">services</span><span class="p">:</span><span class="w"></span>
 <a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">  </span><span class="nt">radarr</span><span class="p">:</span><span class="w"></span>
@@ -686,7 +703,25 @@ Installing Portainer is very simple, you can choose the method of installation f
 <a href="#__codelineno-4-130" id="__codelineno-4-130" name="__codelineno-4-130"></a><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
 <a href="#__codelineno-4-131" id="__codelineno-4-131" name="__codelineno-4-131"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/docker/appdata/overseerr:/app/config</span><span class="w"></span>
 <a href="#__codelineno-4-132" id="__codelineno-4-132" name="__codelineno-4-132"></a><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span><span class="w"></span>
-</code></pre></div></p>
+</code></pre></div>
+<p>Apps in the compose file:</p>
+<ul>
+<li><a href="https://radarr.video/">Radarr</a> - Managing movies.</li>
+<li><a href="https://sonarr.tv/">Sonarr</a> - Managing TV shows.</li>
+<li><a href="https://www.bazarr.media/">Bazarr</a> - Managing subtitles for movies and tv shows.</li>
+<li><a href="https://www.qbittorrent.org/">qBitTorrent</a> - Torrent downloading client.</li>
+<li><a href="plex.tv/">Plex</a> - Media player for all of our downloads.</li>
+<li><a href="https://sabnzbd.org/">Sabnzbd</a> - Binary newsreader, our usenet downloader.</li>
+<li><a href="https://github.com/Jackett/Jackett">Jackett</a> - This is our torrent indexer. it essentialy makes queries to torrent sites and retrives the data from them to pass on to radarr/sonarr.</li>
+<li><a href="https://overseerr.dev/">Overseerr</a> - Requests manager for our media. Instead of going to any of the *arr apps, we can request media straight from this great UI.</li>
+</ul>
+<h3 id="configure-the-apps">Configure the apps</h3>
+<div class="admonition info inline end">
+<p class="admonition-title">Why?</p>
+<p>I encourage you to go an read more about <a href="https://trash-guides.info/Hardlinks/Hardlinks-and-Instant-Moves/">Hardlinks</a> to understand why we're configuring how media server this way.</p>
+</div>
+<p>We will be configuring the apps based on <a href="https://trash-guides.info/Hardlinks/Examples/">TRaSH Guides</a> guidelines.</p>
+<p>For Radarr, Sonarr, Sabnzbd and qBittorrent, make sure you configure it as listed <a href="https://trash-guides.info/Hardlinks/Examples/">here</a>.</p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
