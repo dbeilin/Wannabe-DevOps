@@ -72,17 +72,19 @@ jobs:
         waldo=fred
 ```
 
-### Result
+## Result
 Let's call the above workflows:
 
-  ![](images/reusable1-call-action.png)
-  ![](images/reusable1-run-wf.png)
+![](images/reusable1-call-action.png)
+
+![](images/reusable1-run-wf.png)
 
 The workflow finished successfully:
 
 ![](images/reusable1-success.png)
 
 If we look through all of the environment variables, we'll find our custom ones:
+
 ![](images/reusable1-result.png)
 
-That's it. I believe this is a pretty neat trick that can be useful some for use-cases.
+That's it. I believe this is a pretty neat trick that can be useful some for use-cases 😎
