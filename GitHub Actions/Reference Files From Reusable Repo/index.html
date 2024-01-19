@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../Deploy%20Visual%20Studio%20with%20SCCM/">
+        <link rel="prev" href="../Comment%20on%20PR%20from%20Markdown%20file/">
       
       
-        <link rel="next" href="../Set%20Power%20Plan%20with%20SCCM/">
+        <link rel="next" href="../../Home-Server/Homelab%20Media%20Server/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Resize Client Cache - Daniel Wants To Be A DevOps</title>
+        <title>Use Files From Another Repo - Daniel Wants To Be A DevOps</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#resize-cache-size" class="md-skip">
+        <a href="#use-files-from-another-repo" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Resize Client Cache
+              Use Files From Another Repo
             
           </span>
         </div>
@@ -252,11 +252,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../GitHub%20Actions/Comment%20on%20PR%20from%20Markdown%20file/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Comment%20on%20PR%20from%20Markdown%20file/" class="md-tabs__link">
           
   
   GitHub Actions
@@ -360,13 +362,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../Applying%20Drivers%20The%20Easy%20Way/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../SCCM/Applying%20Drivers%20The%20Easy%20Way/" class="md-tabs__link">
           
   
   SCCM
@@ -518,8 +518,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -528,14 +530,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -549,7 +549,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             GitHub Actions
@@ -563,7 +563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../GitHub%20Actions/Comment%20on%20PR%20from%20Markdown%20file/" class="md-nav__link">
+      <a href="../Comment%20on%20PR%20from%20Markdown%20file/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -581,10 +581,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../GitHub%20Actions/Reference%20Files%20From%20Reusable%20Repo/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Use Files From Another Repo
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -593,6 +613,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    <span class="md-ellipsis">
+      Background
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workaround" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workaround
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Workaround">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calling-the-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calling the Workflow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1064,8 +1146,6 @@
       
   
   
-    
-  
   
   
     
@@ -1076,12 +1156,14 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
@@ -1095,7 +1177,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             SCCM
@@ -1109,7 +1191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Applying%20Drivers%20The%20Easy%20Way/" class="md-nav__link">
+      <a href="../../SCCM/Applying%20Drivers%20The%20Easy%20Way/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1130,7 +1212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Automatically%20Sort%20Computers%20Into%20Collections/" class="md-nav__link">
+      <a href="../../SCCM/Automatically%20Sort%20Computers%20Into%20Collections/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1151,7 +1233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Deploy%20Visual%20Studio%20with%20SCCM/" class="md-nav__link">
+      <a href="../../SCCM/Deploy%20Visual%20Studio%20with%20SCCM/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1169,28 +1251,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Resize Client Cache
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../SCCM/Resize%20Client%20Cache/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1199,42 +1263,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#resize-cache-size" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resize Cache Size
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clear-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clear Cache
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1247,7 +1275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Set%20Power%20Plan%20with%20SCCM/" class="md-nav__link">
+      <a href="../../SCCM/Set%20Power%20Plan%20with%20SCCM/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1286,31 +1314,97 @@
   
 
 
-  <h1>Resize Client Cache</h1>
-
-<p><img alt="" src="../images/cache1.png" /></p>
-<p>Resizing or clearing cache can be useful for many things. In this tutorial I’ll show you how I do it during my Task Sequence. I personally needed it to install Visual Studio during OSD. The default size is 5120MB which is not enough in my case.</p>
-<h3 id="resize-cache-size">Resize Cache Size</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$UIResourceMgr = New-Object -ComObject UIResource.UIResourceMgr
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a> $Cache = $UIResourceMgr.GetCacheInfo()
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a> $Cache.TotalSize = 25600
-</code></pre></div>
-<h3 id="clear-cache">Clear Cache</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$UIResourceMgr = New-Object -ComObject UIResource.UIResourceMgr
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a> $Cache = $UIResourceMgr.GetCacheInfo()
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a> $CacheElements = $Cache.GetCacheElements()
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a> foreach ($Element in $CacheElements) {
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>     $Cache.DeleteCacheElement($Element.CacheElementID)
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a> }
-</code></pre></div>
-<p>Save them all as .ps1 files and place in the same folder.</p>
-<p><img alt="" src="../images/cache2.png" /></p>
-<p>Create a package, without a program, and don’t forget to distribute it to your DP.</p>
-<p><img alt="" src="../images/cache3.png" /></p>
-<p>Now you can use it as a regular PS1 script in your TS as so:</p>
-<p><img alt="" src="../images/cache4.png" /></p>
-<p>For my TS, I increase the cache size, install all the software I need, clear it and then decrease it back to the default setting, since I don’t want it taking too much space on the hard drive.</p>
-<p>Hope this has been helpful in some way 🙂</p>
+<h1 id="use-files-from-another-repo">Use Files From Another Repo</h1>
+<h2 id="background">Background</h2>
+<p>While I was trying to implement a <a href="../Comment%20on%20PR%20from%20Markdown%20file/">workflow that templates an automatic PR comment</a> from a Markdown file, I stumbled upon an issue where I couldn't call my <code>.md</code> file which ewas supposed to sit in anothr repo.
+We have a dedicated repository that holds all of our reusable Github Workflows, which we then reference in each of our services as needed.
+If I simply put my Markdown file in the same repo as our reusable workflows, the file would not be found when some repo calls this workflow.</p>
+<h2 id="example">Example</h2>
+<p>The following would only work if <code>test.md</code> was located in the caller repo:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PR Welcome Comment</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">on</span><span class="p">:</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">workflow_call</span><span class="p">:</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nt">jobs</span><span class="p">:</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">comment</span><span class="p">:</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Checkout repository</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Read .md file and set output</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="no">echo &#39;README&lt;&lt;EOF&#39; &gt;&gt; $GITHUB_ENV</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="no">cat ./test.md &gt;&gt; $GITHUB_ENV</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="no">echo &#39;EOF&#39; &gt;&gt; $GITHUB_ENV</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Comment on PR</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">peter-evans/create-or-update-comment@v2</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">      </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">        </span><span class="nt">issue-number</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ github.event.pull_request.number }}</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">        </span><span class="nt">body</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ env.README }}</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">      </span><span class="nt">env</span><span class="p">:</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">        </span><span class="nt">GITHUB_TOKEN</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.GITHUB_TOKEN }}</span>
+</code></pre></div></p>
+<h2 id="workaround">Workaround</h2>
+<p>In the reusable workflow, we can create 2 files:</p>
+<ul>
+<li>Composite</li>
+<li>Github Action</li>
+</ul>
+<p>Create the composite workflow using the same logic:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pr-comment</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pr-comment</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nt">runs</span><span class="p">:</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="nt">using</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;composite&quot;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="nt">steps</span><span class="p">:</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Get markdown file</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">      </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="no">echo &#39;README&lt;&lt;EOF&#39; &gt;&gt; $GITHUB_ENV</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="no">cat ${{ github.action_path }}/test.md &gt;&gt; $GITHUB_ENV</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="no">echo &#39;EOF&#39; &gt;&gt; $GITHUB_ENV</span>
+</code></pre></div></p>
+<p>And then call it like so in the reusable workflow:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PR Welcome Comment</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">on</span><span class="p">:</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">workflow_call</span><span class="p">:</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nt">jobs</span><span class="p">:</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="nt">comment</span><span class="p">:</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Fetch Markdown</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dbeilin/PrimateCI/composite/common/pr-comment@main</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Comment on PR</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">      </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">peter-evans/create-or-update-comment@v2</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">      </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">        </span><span class="nt">issue-number</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ github.event.pull_request.number }}</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">        </span><span class="nt">body</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ env.README }}</span>
+</code></pre></div></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Both files should sit inside the "reusable" repo.</p>
+</div>
+<h3 id="calling-the-workflow">Calling the Workflow</h3>
+<p>You can now call the workflow like so in any of your repos:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">common-trigger</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nt">on</span><span class="p">:</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nt">pull_request</span><span class="p">:</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">main</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="nt">types</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">opened</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">edited</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">synchronize</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">reopened</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nt">jobs</span><span class="p">:</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="nt">pr-comment</span><span class="p">:</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pr-comment</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dbeilin/PrimateCI/.github/workflows/pr.yml@main</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ github.event_name == &#39;pull_request&#39; &amp;&amp; github.event.action == &#39;opened&#39; }}</span>
+</code></pre></div></p>
+<p>This way, you don't have to keep a <code>.md</code> file in your regular repos and it can sit along your reusable workflows.</p>
 
 
 
