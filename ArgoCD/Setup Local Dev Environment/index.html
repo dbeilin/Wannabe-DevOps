@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../../Home-Server/Homelab%20Media%20Server/">
+        <link rel="prev" href="../../AWS/AWS%20SSM%20Patch%20Group/">
       
       
-        <link rel="next" href="../../PowerShell/Add%20Multiple%20DNS%20Records/">
+        <link rel="next" href="../../GitHub%20Actions/Comment%20on%20PR%20from%20Markdown%20file/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Direnv - Daniel Wants To Be A DevOps</title>
+        <title>Setup ArgoCD Locally - Daniel Wants To Be A DevOps</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#direnv" class="md-skip">
+        <a href="#setup-argocd-locally" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Direnv
+              Setup ArgoCD Locally
             
           </span>
         </div>
@@ -252,11 +252,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../ArgoCD/Setup%20Local%20Dev%20Environment/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   ArgoCD
@@ -306,13 +308,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../Misc/Automatically%20Set%20Environment%20Variables%20with%20Direnv/" class="md-tabs__link">
           
   
   Misc
@@ -536,8 +536,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -546,14 +548,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -567,7 +567,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             ArgoCD
@@ -578,10 +578,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../ArgoCD/Setup%20Local%20Dev%20Environment/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Setup ArgoCD Locally
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -590,6 +610,110 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-kubernetes-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Kubernetes Cluster
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preparing-the-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparing The Files
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparing The Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#0-providertf" class="md-nav__link">
+    <span class="md-ellipsis">
+      0-provider.tf
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-argocdtf" class="md-nav__link">
+    <span class="md-ellipsis">
+      1-argocd.tf
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-argocd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing ArgoCD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessing-argocd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessing ArgoCD
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -788,8 +912,6 @@
       
   
   
-    
-  
   
   
     
@@ -800,12 +922,14 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
@@ -819,7 +943,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Misc
@@ -830,19 +954,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Misc/Automatically%20Set%20Environment%20Variables%20with%20Direnv/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -851,7 +966,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1351,70 +1465,98 @@
   
 
 
-<h1 id="direnv">Direnv</h1>
-<p>If you’re bouncing between multiple AWS accounts or credentials in your CLI, this tool might be a huge quality of life perk for you.</p>
-<p>Basically, direnv can load and unload environment variables depending on the current directory you’re in. In this post I’ll show how to use it to switch between AWS credentials.</p>
-<p>Let’s start with a real world example right of the bat:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>~/playground<span class="w"> </span>master*<span class="w"> </span>❯<span class="w"> </span>ls<span class="w"> </span>-l
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>total<span class="w"> </span><span class="m">20</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>drwxr-xr-x<span class="w"> </span><span class="m">2</span><span class="w"> </span>dbei<span class="w"> </span>dbei<span class="w"> </span><span class="m">4096</span><span class="w"> </span>Apr<span class="w"> </span><span class="m">21</span><span class="w"> </span><span class="m">09</span>:37<span class="w"> </span>project1
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>drwxr-xr-x<span class="w"> </span><span class="m">2</span><span class="w"> </span>dbei<span class="w"> </span>dbei<span class="w"> </span><span class="m">4096</span><span class="w"> </span>Apr<span class="w"> </span><span class="m">21</span><span class="w"> </span><span class="m">09</span>:37<span class="w"> </span>project2
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>~/playground<span class="w"> </span>master*<span class="w"> </span>
-</code></pre></div></p>
-<ul>
-<li>Project1 will use AWS Account #1</li>
-<li>Project2 will use AWS Account #2</li>
-</ul>
-<p><strong>Let’s start with Project1:</strong></p>
+<h1 id="setup-argocd-locally">Setup ArgoCD Locally</h1>
+<p>In many cases you find yourself testing things in local environments, whether it's scripts or workflows, you need a safe space to break things and learn.</p>
+<p>ArgoCD is no exception, and while ArgoCD is native to Kubernetes, you don't need to spend money by running clusters in some cloud. I'll be using <a href="https://kind.sigs.k8s.io/">KinD</a> to create a cluster on my laptop and install everything we need.</p>
+<h2 id="introduction">Introduction</h2>
+<p>We will use 2 repos:
+- Orangutan-infra - Will manage the infrastructure.
+- Orangutan - Will manage the configuration files.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="create-kubernetes-cluster">Create Kubernetes Cluster</h3>
 <ol>
-<li>
-<p>Setup <a href="https://direnv.net/">direnv</a>.</p>
-</li>
-<li>
-<p>cd into your desired directory. In my case it would be <code>project1</code>.</p>
-</li>
-<li>
-<p>Create <strong>.envrc</strong>: <code>vi .envrc</code></p>
-</li>
-<li>
-<p>Add your AWS credentials which you can generate in IAM:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>export AWS_ACCESS_KEY_ID=AKIAZXIDSFDSNTLBJWC
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>export AWS_DEFAULT_REGION=eu-west-1
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>export AWS_SECRET_ACCESS_KEY=KJuja33rTxIlK/wee/DsdrdhjKKg/HDrmtreDJ
-</code></pre></div></p>
-</li>
-<li>
-<p><code>cd</code> in and out of that directory.</p>
-</li>
-<li>
-<p>You should see an error: </p>
-<details class="error" open="open">
-<summary>Error</summary>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>direnv: error /playground/project1/.envrc is blocked. Run direnv allow to approve its content
+<li>Create a cluster: <code>kind create cluster --name playground</code>
+<img alt="" src="../images/installation/create-cluster.png" />
+You can run <code>kubectl get nodes</code> to make sure the control-plane is running.</li>
+</ol>
+<h3 id="preparing-the-files">Preparing The Files</h3>
+<p>We'll use Terraform to install ArgoCD. We'll utilize Terraform's Helm provider to install ArgoCD instead of directly applying the chart on our cluster.</p>
+<p>Before installing the Helm chart, you can run <code>helm search repo argocd</code> to search for the chart:
+<img alt="" src="../images/installation/helm-search-repo.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can run <code>helm show values argo/argo-cd &gt; argo-default-values.yaml</code> to export the default values of the chart. It's helpful when you want to see what values exist for each chart before deploying it.</p>
+</div>
+<ol>
+<li>In <code>orangutan-infra</code> I'll create the following folders and files:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>└── terraform
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    └── argocd
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        ├── 0-provider.tf
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        ├── 1-argocd.tf
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        └── values
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>            └── argocd.yaml
 </code></pre></div>
-</details>
+For our values file <code>argocd.yaml</code>, we'll pass the following:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nn">---</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nt">server</span><span class="p">:</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">extraArgs</span><span class="p">:</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--insecure</span>
+</code></pre></div>
+<code>--insecure</code> will serve our UI on HTTP.</li>
+</ol>
+<h4 id="0-providertf"><code>0-provider.tf</code></h4>
+<p>We'll configure Helm as our provider and pass <code>~/.kube/config</code> to use the local cluster we created:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kr">provider</span><span class="w"> </span><span class="nv">&quot;helm&quot;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nb">kubernetes</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="na">config_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;~/.kube/config&quot;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">}</span>
+</code></pre></div></p>
+<h4 id="1-argocdtf"><code>1-argocd.tf</code></h4>
+<p>For the Helm installation, we'll use the the following block:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kr">resource</span><span class="w"> </span><span class="nc">&quot;helm_release&quot;</span><span class="w"> </span><span class="nv">&quot;argocd&quot;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;argocd&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="na">repository</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;https://argoproj.github.io/argo-helm&quot;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="na">chart</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;argo-cd&quot;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="na">namespace</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;argocd&quot;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="na">create_namespace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">true</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="na">values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="nf">file</span><span class="p">(</span><span class="s2">&quot;values/argocd.yaml&quot;</span><span class="p">)]</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">}</span>
+</code></pre></div></p>
+<h3 id="installing-argocd">Installing ArgoCD</h3>
+<ol>
+<li>Run <code>terraform init</code> to initialize Terraform. If it was successful, you should see the following output:<img alt="" src="../images/installation/tf-init.png" /></li>
+<li>
+<p>We're ready to run <code>terraform apply</code>. If we did everything correctly, the output will show us the resources that we're deploying. Enter <code>yes</code> and wait for ArgoCD to finish installing.<img alt="" src="../images/installation/tf-plan-confirm.png" /></p>
 </li>
 <li>
-<p>Type <code>direnv allow</code> and you should be good:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>~/playground/project1<span class="w"> </span>master*<span class="w"> </span>❯<span class="w"> </span>direnv<span class="w"> </span>allow
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>direnv:<span class="w"> </span>loading<span class="w"> </span>~/playground/project1/.envrc
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>direnv:<span class="w"> </span><span class="nb">export</span><span class="w"> </span>~AWS_DEFAULT_REGION
-</code></pre></div></p>
-</li>
-<li>
-<p>You can test that it works with any AWS CLI command. For example:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>~/playground/project1<span class="w"> </span>master*<span class="w"> </span>❯<span class="w"> </span>aws<span class="w"> </span>s3<span class="w"> </span>ls
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="m">2022</span>-03-22<span class="w"> </span><span class="m">16</span>:35:07<span class="w"> </span>daniel-awesome-bucket
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="m">2022</span>-04-21<span class="w"> </span><span class="m">09</span>:18:52<span class="w"> </span><span class="k">do</span>-not-delete-gatedgarden-audit-384466123559
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>~/playground/project1<span class="w"> </span>master*<span class="w"> </span>❯
-</code></pre></div></p>
+<p>If all went well, you should be able to see our pods are in <code>Running</code> state:
+      <img alt="" src="../images/installation/k-get-pods.png" /></p>
 </li>
 </ol>
-<p>Repeat the same process for Project2 and use different credentials. After that, you should be set. From here you can move between folders, which will automatically move between your AWS credentials and accounts!</p>
-<details class="tip" open="open">
-<summary>Tip</summary>
-<p>Don’t forget to add <code>.envrc</code> to your <code>.gitignore</code>!</p>
-</details>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can run <code>helm status argocd -n argocd</code> to follow the deployment status:
+  <img alt="" src="../images/installation/helm-status.png" /></p>
+</div>
+<h3 id="accessing-argocd">Accessing ArgoCD</h3>
+<ol>
+<li>We need to port forward the Argo Server in order to access it:
+   <img alt="" src="../images/installation/k-port-forward.png" /></li>
+<li>Go to <code>http://localhost:8080</code>. You'll need to enter a username and password.
+   By default, the username is <code>admin</code>.
+   To get the password, we'll need to first fetch the secret that Argo created in our cluster:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>k<span class="w"> </span>get<span class="w"> </span>secrets<span class="w"> </span>argocd-initial-admin-secret<span class="w"> </span>-oyaml<span class="w"> </span>-n<span class="w"> </span>argocd
+</code></pre></div>
+   <img alt="" src="../images/installation/k-get-secrets.png" />
+   The password is base64 encrypted. Let's decrypt it (don't copy the <code>%</code> char, it just states the end of the string):
+   <img alt="" src="../images/installation/base-decrypt.png" /></li>
+<li>Login to Argo's UI and change your password
+   <img alt="" src="../images/installation/argo-ui-update-pw.png" /></li>
+</ol>
+<p>That's it, you successfully installed ArgoCD locally ✅</p>
 
 
 
