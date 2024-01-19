@@ -41,8 +41,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CEncode+Sans+Expanded:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Encode Sans Expanded"}</style>
       
     
     
@@ -58,10 +58,12 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -107,7 +109,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -255,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/Misc/general-direnv/" class="md-tabs__link">
+        <a href="/Misc/Automatically%20Set%20Environment%20Variables%20with%20Direnv/" class="md-tabs__link">
           
   
   Misc
@@ -273,7 +301,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/PowerShell/powershell-auto-shutdown-delete/" class="md-tabs__link">
+        <a href="/PowerShell/Add%20Multiple%20DNS%20Records/" class="md-tabs__link">
           
   
   PowerShell
@@ -291,7 +319,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/Projects/projects-2020/" class="md-tabs__link">
+        <a href="/Projects/TwentyTwenty/" class="md-tabs__link">
           
   
   Projects
@@ -309,7 +337,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/Python/python-pandas-delta/" class="md-tabs__link">
+        <a href="/Python/Python%20Pandas%20Example/" class="md-tabs__link">
           
   
   Python
@@ -327,7 +355,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/SCCM/sccm-client-cache/" class="md-tabs__link">
+        <a href="/SCCM/Applying%20Drivers%20The%20Easy%20Way/" class="md-tabs__link">
           
   
   SCCM
@@ -664,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Misc/general-direnv/" class="md-nav__link">
+      <a href="/Misc/Automatically%20Set%20Environment%20Variables%20with%20Direnv/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -734,11 +762,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/PowerShell/powershell-auto-shutdown-delete/" class="md-nav__link">
+      <a href="/PowerShell/Add%20Multiple%20DNS%20Records/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Powershell auto shutdown delete
+    Add Multiple DNS Records
   </span>
   
 
@@ -755,11 +783,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/PowerShell/powershell-automatic-dns/" class="md-nav__link">
+      <a href="/PowerShell/Auto-Shutdown%20And%20Delete%20VMs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Powershell automatic dns
+    Auto Shutdown And Delete VMs
   </span>
   
 
@@ -776,11 +804,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/PowerShell/powershell-consolidation-alert/" class="md-nav__link">
+      <a href="/PowerShell/Bulk%20Add%20Users%20To%20Distribution%20Group/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Powershell consolidation alert
+    Bulk Add Users To Distribution Group
   </span>
   
 
@@ -797,11 +825,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/PowerShell/powershell-csv-to-dg/" class="md-nav__link">
+      <a href="/PowerShell/Bulk%20Set%20New%20IPs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Powershell csv to dg
+    Bulk Set New IPs
   </span>
   
 
@@ -818,11 +846,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/PowerShell/powershell-static-ip/" class="md-nav__link">
+      <a href="/PowerShell/VMware%20Consolidation%20Alerts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Powershell static ip
+    VMware Consolidation Alerts
   </span>
   
 
@@ -888,11 +916,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/Projects/projects-2020/" class="md-nav__link">
+      <a href="/Projects/TwentyTwenty/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Projects 2020
+    TwentyTwenty
   </span>
   
 
@@ -909,11 +937,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/Projects/projects-vm-cloner/" class="md-nav__link">
+      <a href="/Projects/VM%20Cloner/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Projects vm cloner
+    VM Cloner
   </span>
   
 
@@ -979,11 +1007,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/Python/python-pandas-delta/" class="md-nav__link">
+      <a href="/Python/Python%20Pandas%20Example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Python pandas delta
+    Python Pandas Example
   </span>
   
 
@@ -1049,11 +1077,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/SCCM/sccm-client-cache/" class="md-nav__link">
+      <a href="/SCCM/Applying%20Drivers%20The%20Easy%20Way/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sccm client cache
+    Applying Drivers The Easy Way
   </span>
   
 
@@ -1070,11 +1098,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/SCCM/sccm-drivers/" class="md-nav__link">
+      <a href="/SCCM/Automatically%20Sort%20Computers%20Into%20Collections/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sccm drivers
+    Automatically Sort Computers Into Collections
   </span>
   
 
@@ -1091,11 +1119,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/SCCM/sccm-osd/" class="md-nav__link">
+      <a href="/SCCM/Deploy%20Visual%20Studio%20with%20SCCM/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sccm osd
+    Deploy Visual Studio with SCCM
   </span>
   
 
@@ -1112,11 +1140,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/SCCM/sccm-power-plan/" class="md-nav__link">
+      <a href="/SCCM/Resize%20Client%20Cache/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sccm power plan
+    Resize Client Cache
   </span>
   
 
@@ -1133,11 +1161,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/SCCM/sccm-vs/" class="md-nav__link">
+      <a href="/SCCM/Set%20Power%20Plan%20with%20SCCM/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sccm vs
+    Set Power Plan with SCCM
   </span>
   
 

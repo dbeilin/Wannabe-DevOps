@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../powershell-consolidation-alert/">
+        <link rel="prev" href="../../Home-Server/Homelab%20Media%20Server/">
       
       
-        <link rel="next" href="../powershell-static-ip/">
+        <link rel="next" href="../../PowerShell/Add%20Multiple%20DNS%20Records/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Powershell csv to dg - Daniel Wants To Be A DevOps</title>
+        <title>Direnv - Daniel Wants To Be A DevOps</title>
       
     
     
@@ -45,8 +45,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CEncode+Sans+Expanded:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Encode Sans Expanded"}</style>
       
     
     
@@ -62,16 +62,23 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#direnv" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -103,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Powershell csv to dg
+              Direnv
             
           </span>
         </div>
@@ -111,7 +118,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -255,11 +288,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../Misc/general-direnv/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   Misc
@@ -273,13 +308,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../powershell-auto-shutdown-delete/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../PowerShell/Add%20Multiple%20DNS%20Records/" class="md-tabs__link">
           
   
   PowerShell
@@ -297,7 +330,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Projects/projects-2020/" class="md-tabs__link">
+        <a href="../../Projects/TwentyTwenty/" class="md-tabs__link">
           
   
   Projects
@@ -315,7 +348,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Python/python-pandas-delta/" class="md-tabs__link">
+        <a href="../../Python/Python%20Pandas%20Example/" class="md-tabs__link">
           
   
   Python
@@ -333,7 +366,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../SCCM/sccm-client-cache/" class="md-tabs__link">
+        <a href="../../SCCM/Applying%20Drivers%20The%20Easy%20Way/" class="md-tabs__link">
           
   
   SCCM
@@ -625,76 +658,6 @@
       
   
   
-  
-  
-    
-    
-    
-    
-    
-      
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Misc
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            Misc
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Misc/general-direnv/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Direnv
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -712,89 +675,26 @@
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    PowerShell
+    Misc
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            PowerShell
+            Misc
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../powershell-auto-shutdown-delete/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Powershell auto shutdown delete
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../powershell-automatic-dns/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Powershell automatic dns
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../powershell-consolidation-alert/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Powershell consolidation alert
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -809,17 +709,89 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Powershell csv to dg
+    Direnv
   </span>
   
 
       </a>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    PowerShell
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            PowerShell
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PowerShell/Add%20Multiple%20DNS%20Records/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Add Multiple DNS Records
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -832,11 +804,74 @@
   
   
     <li class="md-nav__item">
-      <a href="../powershell-static-ip/" class="md-nav__link">
+      <a href="../../PowerShell/Auto-Shutdown%20And%20Delete%20VMs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Powershell static ip
+    Auto Shutdown And Delete VMs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PowerShell/Bulk%20Add%20Users%20To%20Distribution%20Group/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bulk Add Users To Distribution Group
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PowerShell/Bulk%20Set%20New%20IPs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bulk Set New IPs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PowerShell/VMware%20Consolidation%20Alerts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VMware Consolidation Alerts
   </span>
   
 
@@ -902,11 +937,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Projects/projects-2020/" class="md-nav__link">
+      <a href="../../Projects/TwentyTwenty/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Projects 2020
+    TwentyTwenty
   </span>
   
 
@@ -923,11 +958,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Projects/projects-vm-cloner/" class="md-nav__link">
+      <a href="../../Projects/VM%20Cloner/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Projects vm cloner
+    VM Cloner
   </span>
   
 
@@ -993,11 +1028,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Python/python-pandas-delta/" class="md-nav__link">
+      <a href="../../Python/Python%20Pandas%20Example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Python pandas delta
+    Python Pandas Example
   </span>
   
 
@@ -1063,11 +1098,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SCCM/sccm-client-cache/" class="md-nav__link">
+      <a href="../../SCCM/Applying%20Drivers%20The%20Easy%20Way/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sccm client cache
+    Applying Drivers The Easy Way
   </span>
   
 
@@ -1084,11 +1119,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SCCM/sccm-drivers/" class="md-nav__link">
+      <a href="../../SCCM/Automatically%20Sort%20Computers%20Into%20Collections/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sccm drivers
+    Automatically Sort Computers Into Collections
   </span>
   
 
@@ -1105,11 +1140,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SCCM/sccm-osd/" class="md-nav__link">
+      <a href="../../SCCM/Deploy%20Visual%20Studio%20with%20SCCM/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sccm osd
+    Deploy Visual Studio with SCCM
   </span>
   
 
@@ -1126,11 +1161,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SCCM/sccm-power-plan/" class="md-nav__link">
+      <a href="../../SCCM/Resize%20Client%20Cache/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sccm power plan
+    Resize Client Cache
   </span>
   
 
@@ -1147,11 +1182,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SCCM/sccm-vs/" class="md-nav__link">
+      <a href="../../SCCM/Set%20Power%20Plan%20with%20SCCM/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sccm vs
+    Set Power Plan with SCCM
   </span>
   
 
@@ -1186,22 +1221,70 @@
   
 
 
-  <h1>Powershell csv to dg</h1>
-
-<p><img alt="" src="../images/csv-to-dg/dg.png" /></p>
-<p>If you need to add multiple users to a distribution group in Office 365, you’ll find out using the GUI can take a lot of time.
-Luckily, it only takes a CSV file and one line of code to do this automatically.</p>
-<p>First, save a CSV file with the email addresses you need, and make sure the first line is <code>displayname</code>.</p>
-<p><img alt="" src="../images/csv-to-dg/dg2.png" /></p>
-<p>First, test if PowerShell reads your CSV correctly as so:</p>
-<p><img alt="" src="../images/csv-to-dg/dg3.png" /></p>
-<p>If your output looks like the image above, then you’re good to go.
-The command you need to run to add the users to the distribution list is:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">Import-Csv</span> <span class="nv">$Location</span> <span class="p">|</span> <span class="k">foreach</span> <span class="p">{</span><span class="nb">Add-DistributionGroupMember</span> <span class="n">-Identity</span> <span class="s2">&quot;Name of DL&quot;</span> <span class="n">-Member</span> <span class="nv">$_</span><span class="p">.</span><span class="n">displayname</span><span class="p">}</span>
+<h1 id="direnv">Direnv</h1>
+<p>If you’re bouncing between multiple AWS accounts or credentials in your CLI, this tool might be a huge quality of life perk for you.</p>
+<p>Basically, direnv can load and unload environment variables depending on the current directory you’re in. In this post I’ll show how to use it to switch between AWS credentials.</p>
+<p>Let’s start with a real world example right of the bat:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>~/playground<span class="w"> </span>master*<span class="w"> </span>❯<span class="w"> </span>ls<span class="w"> </span>-l
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>total<span class="w"> </span><span class="m">20</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>drwxr-xr-x<span class="w"> </span><span class="m">2</span><span class="w"> </span>dbei<span class="w"> </span>dbei<span class="w"> </span><span class="m">4096</span><span class="w"> </span>Apr<span class="w"> </span><span class="m">21</span><span class="w"> </span><span class="m">09</span>:37<span class="w"> </span>project1
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>drwxr-xr-x<span class="w"> </span><span class="m">2</span><span class="w"> </span>dbei<span class="w"> </span>dbei<span class="w"> </span><span class="m">4096</span><span class="w"> </span>Apr<span class="w"> </span><span class="m">21</span><span class="w"> </span><span class="m">09</span>:37<span class="w"> </span>project2
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>~/playground<span class="w"> </span>master*<span class="w"> </span>
+</code></pre></div></p>
+<ul>
+<li>Project1 will use AWS Account #1</li>
+<li>Project2 will use AWS Account #2</li>
+</ul>
+<p><strong>Let’s start with Project1:</strong></p>
+<ol>
+<li>
+<p>Setup <a href="https://direnv.net/">direnv</a>.</p>
+</li>
+<li>
+<p>cd into your desired directory. In my case it would be <code>project1</code>.</p>
+</li>
+<li>
+<p>Create <strong>.envrc</strong>: <code>vi .envrc</code></p>
+</li>
+<li>
+<p>Add your AWS credentials which you can generate in IAM:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>export AWS_ACCESS_KEY_ID=AKIAZXIDSFDSNTLBJWC
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>export AWS_DEFAULT_REGION=eu-west-1
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>export AWS_SECRET_ACCESS_KEY=KJuja33rTxIlK/wee/DsdrdhjKKg/HDrmtreDJ
+</code></pre></div></p>
+</li>
+<li>
+<p><code>cd</code> in and out of that directory.</p>
+</li>
+<li>
+<p>You should see an error: </p>
+<details class="error" open="open">
+<summary>Error</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>direnv: error /playground/project1/.envrc is blocked. Run direnv allow to approve its content
 </code></pre></div>
-<p>For <code>$Location</code>, just type the path to the <code>.csv</code> file. It doesn’t have to be a variable of course.
-For the <code>-Identity</code>, use the name of the group you want to add the users to.</p>
-<p>That’s it. Hope this will be useful to someone 🙂</p>
+</details>
+</li>
+<li>
+<p>Type <code>direnv allow</code> and you should be good:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>~/playground/project1<span class="w"> </span>master*<span class="w"> </span>❯<span class="w"> </span>direnv<span class="w"> </span>allow
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>direnv:<span class="w"> </span>loading<span class="w"> </span>~/playground/project1/.envrc
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>direnv:<span class="w"> </span><span class="nb">export</span><span class="w"> </span>~AWS_DEFAULT_REGION
+</code></pre></div></p>
+</li>
+<li>
+<p>You can test that it works with any AWS CLI command. For example:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>~/playground/project1<span class="w"> </span>master*<span class="w"> </span>❯<span class="w"> </span>aws<span class="w"> </span>s3<span class="w"> </span>ls
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="m">2022</span>-03-22<span class="w"> </span><span class="m">16</span>:35:07<span class="w"> </span>daniel-awesome-bucket
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="m">2022</span>-04-21<span class="w"> </span><span class="m">09</span>:18:52<span class="w"> </span><span class="k">do</span>-not-delete-gatedgarden-audit-384466123559
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>~/playground/project1<span class="w"> </span>master*<span class="w"> </span>❯
+</code></pre></div></p>
+</li>
+</ol>
+<p>Repeat the same process for Project2 and use different credentials. After that, you should be set. From here you can move between folders, which will automatically move between your AWS credentials and accounts!</p>
+<details class="tip" open="open">
+<summary>Tip</summary>
+<p>Don’t forget to add <code>.envrc</code> to your <code>.gitignore</code>!</p>
+</details>
 
 
 

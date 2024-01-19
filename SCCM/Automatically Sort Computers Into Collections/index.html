@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../../Home-Server/Homelab%20Media%20Server/">
+        <link rel="prev" href="../Applying%20Drivers%20The%20Easy%20Way/">
       
       
-        <link rel="next" href="../../PowerShell/powershell-auto-shutdown-delete/">
+        <link rel="next" href="../Deploy%20Visual%20Studio%20with%20SCCM/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Direnv - Daniel Wants To Be A DevOps</title>
+        <title>Automatically Sort Computers Into Collections - Daniel Wants To Be A DevOps</title>
       
     
     
@@ -45,8 +45,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CEncode+Sans+Expanded:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Encode Sans Expanded"}</style>
       
     
     
@@ -62,10 +62,12 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#direnv" class="md-skip">
+        <a href="#how-it-can-be-used" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Direnv
+              Automatically Sort Computers Into Collections
             
           </span>
         </div>
@@ -116,7 +118,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -260,13 +288,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../Misc/Automatically%20Set%20Environment%20Variables%20with%20Direnv/" class="md-tabs__link">
           
   
   Misc
@@ -284,7 +310,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../PowerShell/powershell-auto-shutdown-delete/" class="md-tabs__link">
+        <a href="../../PowerShell/Add%20Multiple%20DNS%20Records/" class="md-tabs__link">
           
   
   PowerShell
@@ -302,7 +328,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Projects/projects-2020/" class="md-tabs__link">
+        <a href="../../Projects/TwentyTwenty/" class="md-tabs__link">
           
   
   Projects
@@ -320,7 +346,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Python/python-pandas-delta/" class="md-tabs__link">
+        <a href="../../Python/Python%20Pandas%20Example/" class="md-tabs__link">
           
   
   Python
@@ -334,11 +360,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../SCCM/sccm-client-cache/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Applying%20Drivers%20The%20Easy%20Way/" class="md-tabs__link">
           
   
   SCCM
@@ -630,8 +658,6 @@
       
   
   
-    
-  
   
   
     
@@ -642,12 +668,14 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -661,7 +689,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Misc
@@ -672,19 +700,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Misc/Automatically%20Set%20Environment%20Variables%20with%20Direnv/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -693,7 +712,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -755,11 +773,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PowerShell/powershell-auto-shutdown-delete/" class="md-nav__link">
+      <a href="../../PowerShell/Add%20Multiple%20DNS%20Records/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Powershell auto shutdown delete
+    Add Multiple DNS Records
   </span>
   
 
@@ -776,11 +794,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PowerShell/powershell-automatic-dns/" class="md-nav__link">
+      <a href="../../PowerShell/Auto-Shutdown%20And%20Delete%20VMs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Powershell automatic dns
+    Auto Shutdown And Delete VMs
   </span>
   
 
@@ -797,11 +815,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PowerShell/powershell-consolidation-alert/" class="md-nav__link">
+      <a href="../../PowerShell/Bulk%20Add%20Users%20To%20Distribution%20Group/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Powershell consolidation alert
+    Bulk Add Users To Distribution Group
   </span>
   
 
@@ -818,11 +836,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PowerShell/powershell-csv-to-dg/" class="md-nav__link">
+      <a href="../../PowerShell/Bulk%20Set%20New%20IPs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Powershell csv to dg
+    Bulk Set New IPs
   </span>
   
 
@@ -839,11 +857,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PowerShell/powershell-static-ip/" class="md-nav__link">
+      <a href="../../PowerShell/VMware%20Consolidation%20Alerts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Powershell static ip
+    VMware Consolidation Alerts
   </span>
   
 
@@ -909,11 +927,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Projects/projects-2020/" class="md-nav__link">
+      <a href="../../Projects/TwentyTwenty/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Projects 2020
+    TwentyTwenty
   </span>
   
 
@@ -930,11 +948,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Projects/projects-vm-cloner/" class="md-nav__link">
+      <a href="../../Projects/VM%20Cloner/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Projects vm cloner
+    VM Cloner
   </span>
   
 
@@ -1000,11 +1018,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Python/python-pandas-delta/" class="md-nav__link">
+      <a href="../../Python/Python%20Pandas%20Example/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Python pandas delta
+    Python Pandas Example
   </span>
   
 
@@ -1025,8 +1043,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -1035,14 +1055,12 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
@@ -1056,7 +1074,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             SCCM
@@ -1070,11 +1088,98 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SCCM/sccm-client-cache/" class="md-nav__link">
+      <a href="../Applying%20Drivers%20The%20Easy%20Way/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sccm client cache
+    Applying Drivers The Easy Way
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Automatically Sort Computers Into Collections
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Automatically Sort Computers Into Collections
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-can-be-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it can be used
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Deploy%20Visual%20Studio%20with%20SCCM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Deploy Visual Studio with SCCM
   </span>
   
 
@@ -1091,11 +1196,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SCCM/sccm-drivers/" class="md-nav__link">
+      <a href="../Resize%20Client%20Cache/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sccm drivers
+    Resize Client Cache
   </span>
   
 
@@ -1112,53 +1217,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../SCCM/sccm-osd/" class="md-nav__link">
+      <a href="../Set%20Power%20Plan%20with%20SCCM/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Sccm osd
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../SCCM/sccm-power-plan/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sccm power plan
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../SCCM/sccm-vs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sccm vs
+    Set Power Plan with SCCM
   </span>
   
 
@@ -1193,70 +1256,133 @@
   
 
 
-<h1 id="direnv">Direnv</h1>
-<p>If you’re bouncing between multiple AWS accounts or credentials in your CLI, this tool might be a huge quality of life perk for you.</p>
-<p>Basically, direnv can load and unload environment variables depending on the current directory you’re in. In this post I’ll show how to use it to switch between AWS credentials.</p>
-<p>Let’s start with a real world example right of the bat:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>~/playground<span class="w"> </span>master*<span class="w"> </span>❯<span class="w"> </span>ls<span class="w"> </span>-l
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>total<span class="w"> </span><span class="m">20</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>drwxr-xr-x<span class="w"> </span><span class="m">2</span><span class="w"> </span>dbei<span class="w"> </span>dbei<span class="w"> </span><span class="m">4096</span><span class="w"> </span>Apr<span class="w"> </span><span class="m">21</span><span class="w"> </span><span class="m">09</span>:37<span class="w"> </span>project1
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>drwxr-xr-x<span class="w"> </span><span class="m">2</span><span class="w"> </span>dbei<span class="w"> </span>dbei<span class="w"> </span><span class="m">4096</span><span class="w"> </span>Apr<span class="w"> </span><span class="m">21</span><span class="w"> </span><span class="m">09</span>:37<span class="w"> </span>project2
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>~/playground<span class="w"> </span>master*<span class="w"> </span>
+  <h1>Automatically Sort Computers Into Collections</h1>
+
+<p><img alt="" src="../images/osd1.png" /></p>
+<p>If you’re looking to organize new computers that you deploy, then this might be helpful.</p>
+<p>First, save the following code as <code>AddMeToCollection.vbs</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&#39;==========================================================================
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a> &#39;
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a> &#39; NAME: AddMeToCollection.vbs
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a> &#39; 
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a> &#39; AUTHOR: Vinay, Microsoft
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a> &#39; DATE  : 8/7/2010
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a> &#39;
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a> &#39; COMMENT: Script to add Unknown Computer to a specified collection during OSD
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a> &#39; USAGE: cscript AddMeToCollection.vbs   %_SMSTSClientIdentity%
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a> &#39;==========================================================================
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a> On Error Resume Next
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a> Dim arrArguments
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a> Set arrArguments = WScript.Arguments
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a> If arrArguments.Count &lt;&gt; 3 Then
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>     WScript.Echo &quot;Usage: cscript AddMeToCollection.vbs   %_SMSTSClientIdentity%&quot;
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>     WScript.Echo &quot; and  needs to be specified, but last parameter needs to be used as is.&quot;
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>     WScript.Quit
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a> End If
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a> Dim strServer, strCollID, strProvNamespace
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a> Dim strComputerName, strGUID, strResourceID
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a> Dim strUser, strPassword
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a> strResourceID = 0
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a> strServer = arrArguments(0)
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a> strCollID = arrArguments(1)
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a> strGUID = arrArguments(2)
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a> WScript.Echo &quot;&quot;
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a> WScript.Echo &quot;===================================&quot;
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a> WScript.Echo &quot;   ADDING COMPUTER TO COLLECTION&quot;
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a> WScript.Echo &quot;===================================&quot;
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a> WScript.Echo &quot;Site Server specified: &quot; &amp; strServer
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a> WScript.Echo &quot;Collection ID specified: &quot; &amp; strCollID
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a> WScript.Echo &quot;SMS Client &quot; &amp; strGUID
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a> &#39;Get the computer name
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a> Set oNet = CreateObject(&quot;WScript.Network&quot;)
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a> strComputerName = oNet.ComputerName
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a> WScript.Echo &quot;Computer Name: &quot; &amp; strComputerName
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a> Set oNet = Nothing
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a> &#39;Connect to root/sms namespace on SMS Site Server to find the Provider Namespace
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a> Set objLocator = CreateObject(&quot;WbemScripting.SWbemLocator&quot;)    
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a> Set oWbem = objLocator.ConnectServer(strServer, &quot;root/sms&quot;)  
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a> If Err.number &lt;&gt; 0 Then
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>     WScript.Echo &quot;Error connecting to root\sms namespace to find Provider Location. Exiting!&quot;
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>     WScript.Echo &quot;Error = &quot; &amp; Err.number &amp; &quot; - &quot; &amp; Err.Description
+<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>     WScript.Quit
+<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a> End If
+<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a> Set colNameSpace = oWbem.ExecQuery(&quot;SELECT * FROM SMS_ProviderLocation&quot;)
+<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a> For Each item in colNameSpace
+<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>        WScript.Echo &quot;SMS Provider Namespace = &quot; &amp; item.NamespacePath
+<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>     strProvNamespace = item.NamespacePath
+<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a> Next
+<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a> &#39;Connect to the Provider Namespace
+<a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a> Set oWbem = objLocator.ConnectServer(strServer, strProvNamespace)
+<a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a> If Err.number &lt;&gt; 0 Then
+<a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>     WScript.Echo &quot;Error connecting to SMS Provider namespace. Exiting!&quot;
+<a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>     WScript.Echo &quot;Error = &quot; &amp; Err.number &amp; &quot; - &quot; &amp; Err.Description
+<a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>     WScript.Quit
+<a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a> Else
+<a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>     WScript.Echo &quot;Successfully Connected to the SMS Provider Namespace&quot;
+<a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a> End If
+<a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a> &#39;Find out the Resource ID of the computer by querying SMS_R_System Class against the SMS GUID
+<a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a> Set colResources = oWbem.ExecQuery(&quot;SELECT ResourceID FROM SMS_R_System WHERE SMSUniqueIdentifier = &#39;&quot; &amp; strGUID &amp; &quot;&#39;&quot;)
+<a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a> For Each oResource In colResources
+<a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>     strResourceID = oResource.ResourceID
+<a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>     WScript.Echo &quot;Resource ID = &quot; &amp; strResourceID
+<a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a> Next
+<a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a> &#39;If Resource ID was not found, exit gracefully
+<a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a> If strResourceID = 0 Then
+<a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a>     WScript.Echo &quot;Could not find the Resource ID for the computer. Exiting!&quot;
+<a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a>     WScript.Quit
+<a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a> End If
+<a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a> &#39;Verify if the specified collection exists
+<a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a> Set oCollection = oWbem.Get(&quot;SMS_Collection.CollectionID=&quot; &amp; &quot;&quot;&quot;&quot; &amp; strCollID &amp; &quot;&quot;&quot;&quot;)
+<a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a> If oCollection.Name = &quot;&quot; Then
+<a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a>     WScript.Echo &quot;Specified Collection (&quot; &amp; strCollID &amp; &quot;) was Not Found. Exiting!&quot;
+<a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a>     WScript.Quit
+<a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a> End If
+<a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a> &#39;Create a Direct Membership rule
+<a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a> Set oDirectRule = oWbem.Get(&quot;SMS_CollectionRuleDirect&quot;).SpawnInstance_ ()
+<a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a> oDirectRule.ResourceClassName = &quot;SMS_R_System&quot;
+<a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a> oDirectRule.ResourceID = strResourceID
+<a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a> oDirectRule.RuleName = strComputerName &amp; &quot; - SMSTS&quot;
+<a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a> &#39;Add the Direct Membership Rule to the specified collection
+<a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a> oCollection.AddMembershipRule oDirectRule
+<a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a> If Err.Number &lt;&gt; 0 Then
+<a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a>     WScript.Echo &quot;Could not add the computer to the specified collection. Exiting!&quot;
+<a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a>     WScript.Echo &quot;Error = &quot; &amp; Err.number &amp; &quot; - &quot; &amp; Err.Description
+<a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a>     WScript.Quit
+<a id="__codelineno-0-88" name="__codelineno-0-88" href="#__codelineno-0-88"></a> Else
+<a id="__codelineno-0-89" name="__codelineno-0-89" href="#__codelineno-0-89"></a>     WScript.Echo strComputerName &amp; &quot; successfully added To &quot; &amp; strCollID
+<a id="__codelineno-0-90" name="__codelineno-0-90" href="#__codelineno-0-90"></a> End If
+<a id="__codelineno-0-91" name="__codelineno-0-91" href="#__codelineno-0-91"></a> WScript.Echo &quot;===================================&quot;
+<a id="__codelineno-0-92" name="__codelineno-0-92" href="#__codelineno-0-92"></a> WScript.Echo &quot;&quot;
+<a id="__codelineno-0-93" name="__codelineno-0-93" href="#__codelineno-0-93"></a> Set objLocator = Nothing
+<a id="__codelineno-0-94" name="__codelineno-0-94" href="#__codelineno-0-94"></a> Set oWbem = Nothing
+<a id="__codelineno-0-95" name="__codelineno-0-95" href="#__codelineno-0-95"></a> Set oCollection = Nothing
+<a id="__codelineno-0-96" name="__codelineno-0-96" href="#__codelineno-0-96"></a> Set oDirectRule = Nothing
+<a id="__codelineno-0-97" name="__codelineno-0-97" href="#__codelineno-0-97"></a> &#39;End Script
+</code></pre></div>
+<p>Move it to a folder in your SCCM server and create a new package.</p>
+<p><img alt="" src="../images/osd2.png" /></p>
+<p><img alt="" src="../images/osd3.png" /></p>
+<p>Now go to your Task Sequence and add a command line</p>
+<p><img alt="" src="../images/osd4.png" /></p>
+<p>Add the following command:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cscript AddMeToCollection.vbs sccm.server.com XX100028 %_SMSTSClientIdentity%
 </code></pre></div></p>
 <ul>
-<li>Project1 will use AWS Account #1</li>
-<li>Project2 will use AWS Account #2</li>
+<li>Where <code>sccm.server.com</code> is, replace it with your SCCM server.</li>
+<li>For <code>XX1000E1</code>, replace it with the collection’s ID.</li>
 </ul>
-<p><strong>Let’s start with Project1:</strong></p>
-<ol>
-<li>
-<p>Setup <a href="https://direnv.net/">direnv</a>.</p>
-</li>
-<li>
-<p>cd into your desired directory. In my case it would be <code>project1</code>.</p>
-</li>
-<li>
-<p>Create <strong>.envrc</strong>: <code>vi .envrc</code></p>
-</li>
-<li>
-<p>Add your AWS credentials which you can generate in IAM:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>export AWS_ACCESS_KEY_ID=AKIAZXIDSFDSNTLBJWC
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>export AWS_DEFAULT_REGION=eu-west-1
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>export AWS_SECRET_ACCESS_KEY=KJuja33rTxIlK/wee/DsdrdhjKKg/HDrmtreDJ
-</code></pre></div></p>
-</li>
-<li>
-<p><code>cd</code> in and out of that directory.</p>
-</li>
-<li>
-<p>You should see an error: </p>
-<details class="error" open="open">
-<summary>Error</summary>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>direnv: error /playground/project1/.envrc is blocked. Run direnv allow to approve its content
-</code></pre></div>
+<p><img alt="" src="../images/osd5.png" /></p>
+<p>I personally had to use a privileged account for it to work. I apply this after the client is installed, and from my testing, it failed without admin rights. As always, your mileage may vary.</p>
+<h3 id="how-it-can-be-used">How it can be used</h3>
+<p>This script can be super useful in environments where you deploy all kinds of image versions for different departments. For example, I use TsGui and created an XML GUI to choose which customization to apply to the image using variables.
+This script helped me add the device I’m imaging to the correct collection because I configure each department separately, as can be seen here:</p>
+<p><img alt="" src="../images/osd6.png" /></p>
+<p><img alt="" src="../images/osd7.png" /></p>
+<details class="note" open="open">
+<summary>Note</summary>
+<p>In my environment, the new device appears as “Unknown” fora while (15-30 minutes) but eventually gets the correct hostname.</p>
 </details>
-</li>
-<li>
-<p>Type <code>direnv allow</code> and you should be good:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>~/playground/project1<span class="w"> </span>master*<span class="w"> </span>❯<span class="w"> </span>direnv<span class="w"> </span>allow
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>direnv:<span class="w"> </span>loading<span class="w"> </span>~/playground/project1/.envrc
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>direnv:<span class="w"> </span><span class="nb">export</span><span class="w"> </span>~AWS_DEFAULT_REGION
-</code></pre></div></p>
-</li>
-<li>
-<p>You can test that it works with any AWS CLI command. For example:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>~/playground/project1<span class="w"> </span>master*<span class="w"> </span>❯<span class="w"> </span>aws<span class="w"> </span>s3<span class="w"> </span>ls
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="m">2022</span>-03-22<span class="w"> </span><span class="m">16</span>:35:07<span class="w"> </span>daniel-awesome-bucket
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="m">2022</span>-04-21<span class="w"> </span><span class="m">09</span>:18:52<span class="w"> </span><span class="k">do</span>-not-delete-gatedgarden-audit-384466123559
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>~/playground/project1<span class="w"> </span>master*<span class="w"> </span>❯
-</code></pre></div></p>
-</li>
-</ol>
-<p>Repeat the same process for Project2 and use different credentials. After that, you should be set. From here you can move between folders, which will automatically move between your AWS credentials and accounts!</p>
-<details class="tip" open="open">
-<summary>Tip</summary>
-<p>Don’t forget to add <code>.envrc</code> to your <code>.gitignore</code>!</p>
-</details>
+<p>Hope this has been useful to you 🙂</p>
 
 
 
