@@ -58,19 +58,24 @@ theme:
   language: en
   features:
     - navigation.tracking
+    - navigation.sections
     - navigation.tabs
     - navigation.expand
     - navigation.top
     - toc.integrate
     - content.code.annotate
     - content.tabs.link
-
+    - content.code.annotation
+    - content.code.copy
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
   palette:
     primary: indigo
     scheme: slate
 
 plugins:
-  - glightbox
+  # - glightbox
   - search:
       lang: en
   - tags:
