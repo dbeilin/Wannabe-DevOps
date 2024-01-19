@@ -58,6 +58,6 @@ if len(close_delta) > 0: #Check if there are any employees queued up, so it won'
 
 The output looks something like this:
 
-![](images/python/pandas.png)
+![](images/pandas.png)
 
 Hope this will be helpful to someone 😊

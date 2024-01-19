@@ -1,4 +1,5 @@
-# Welcome my blog
+# Wannabe-DevOps
+Here you will find random guides and projects that I'm interested in documenting.
 
-This blog exists to share my findings, tutorials and other tech-related stuff with everyone.
-It's also very useful for self-documentation, so hopefully sharing it with the internet would help others as well 😊
+## About me
+I'm Daniel. I come from Sysadmin background and now making my transition to DevOps 😎

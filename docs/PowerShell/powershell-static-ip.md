@@ -1,4 +1,4 @@
-![](images/powershell/dhcp/dhcp1.png)
+![](images/dhcp/dhcp1.png)
 
 This script reaches out to each computer you have in your .csv and sets a static IP for it. Will you ever use it? Probably not because luckily, DHCP is a thing.
 I personally found it useful for a few very specific scenarios so here it is anyway 🙂
@@ -7,7 +7,7 @@ First, create a `.csv` file that looks like this:
 ???+ note inline
     you can use different names for the headers, just make sure to change them in the script as well
 
-![](images/powershell/dhcp/dhcp-excel.png)
+![](images/dhcp/dhcp-excel.png)
 
 Make sure you use “Name” and “New IP” as seen in the pictures.
 

@@ -5,32 +5,32 @@ site_author: Daniel Beilin
 repo_url: https://github.com/dbeilin/Wannabe-DevOps
 repo_name:  dbeilin/Wannabe-DevOps
 
-nav:
-    - Home: index.md
-    - 'General':
-        - 'Switch Between AWS Credentials With Direnv': 'general-direnv.md'
-    - 'AWS':
-        - 'Add Multiple Instances To a Patch Group in SSM': 'aws-ssm-patchgroup.md'
-    - 'Python':
-        - 'Pandas – Get delta of two dates': 'python-pandas-delta.md'
-    - 'PowerShell':
-        - 'Send An Alert If a VM Needs Consolidation': 'powershell-consolidation-alert.md'
-        - 'Automatically Add Multiple DNS A Records': 'powershell-automatic-dns.md'
-        - 'Shutdown and Delete Multiple VMs Automatically': 'powershell-auto-shutdown-delete.md'
-        - 'Automatically set a static IP for multiple hosts': 'powershell-static-ip.md'
-        - 'Add Users From a CSV to a Distribution Group with PowerShell': 'powershell-csv-to-dg.md'
-    - 'SCCM':
-        - 'Resize or Clear Client Cache': 'sccm-client-cache.md'
-        - 'Add a device to a collection during OSD': 'sccm-osd.md'
-        - 'Deploy Visual Studio 2017 with SCCM': 'sccm-vs.md'
-        - 'Set a Power Plan in SCCM': 'sccm-power-plan.md'
-        - 'Apply drivers in SCCM – The Easy Way': 'sccm-drivers.md'
-    - 'My Projects':
-        - 'TwentyTwenty – My First PyQt GUI App': 'projects-2020.md'
-        - 'VM Cloner': 'projects-vm-cloner.md'
-    - 'Home Lab':
-        - 'Media Server Automation': 'homelab-media-server.md'
-    - About: about.md
+# nav:
+#     - Home: index.md
+#     - 'General':
+#         - 'Switch Between AWS Credentials With Direnv': 'general-direnv.md'
+#     - 'AWS':
+#         - 'Add Multiple Instances To a Patch Group in SSM': 'aws-ssm-patchgroup.md'
+#     - 'Python':
+#         - 'Pandas – Get delta of two dates': 'python-pandas-delta.md'
+#     - 'PowerShell':
+#         - 'Send An Alert If a VM Needs Consolidation': 'powershell-consolidation-alert.md'
+#         - 'Automatically Add Multiple DNS A Records': 'powershell-automatic-dns.md'
+#         - 'Shutdown and Delete Multiple VMs Automatically': 'powershell-auto-shutdown-delete.md'
+#         - 'Automatically set a static IP for multiple hosts': 'powershell-static-ip.md'
+#         - 'Add Users From a CSV to a Distribution Group with PowerShell': 'powershell-csv-to-dg.md'
+#     - 'SCCM':
+#         - 'Resize or Clear Client Cache': 'sccm-client-cache.md'
+#         - 'Add a device to a collection during OSD': 'sccm-osd.md'
+#         - 'Deploy Visual Studio 2017 with SCCM': 'sccm-vs.md'
+#         - 'Set a Power Plan in SCCM': 'sccm-power-plan.md'
+#         - 'Apply drivers in SCCM – The Easy Way': 'sccm-drivers.md'
+#     - 'My Projects':
+#         - 'TwentyTwenty – My First PyQt GUI App': 'projects-2020.md'
+#         - 'VM Cloner': 'projects-vm-cloner.md'
+#     - 'Home Lab':
+#         - 'Media Server Automation': 'homelab-media-server.md'
+#     - About: about.md
 
 markdown_extensions:
   - attr_list

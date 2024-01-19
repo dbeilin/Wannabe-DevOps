@@ -1,4 +1,4 @@
-![](images/sccm/osd1.png)
+![](images/osd1.png)
 
 If you’re looking to organize new computers that you deploy, then this might be helpful.
 
@@ -106,13 +106,13 @@ First, save the following code as `AddMeToCollection.vbs`
 
 Move it to a folder in your SCCM server and create a new package.
 
-![](images/sccm/osd2.png)
+![](images/osd2.png)
 
-![](images/sccm/osd3.png)
+![](images/osd3.png)
 
 Now go to your Task Sequence and add a command line
 
-![](images/sccm/osd4.png)
+![](images/osd4.png)
 
 Add the following command:
 ```
@@ -122,7 +122,7 @@ cscript AddMeToCollection.vbs sccm.server.com XX100028 %_SMSTSClientIdentity%
 - Where `sccm.server.com` is, replace it with your SCCM server.
 - For `XX1000E1`, replace it with the collection’s ID.
 
-![](images/sccm/osd5.png)
+![](images/osd5.png)
 
 I personally had to use a privileged account for it to work. I apply this after the client is installed, and from my testing, it failed without admin rights. As always, your mileage may vary.
 
@@ -131,9 +131,9 @@ I personally had to use a privileged account for it to work. I apply this after 
 This script can be super useful in environments where you deploy all kinds of image versions for different departments. For example, I use TsGui and created an XML GUI to choose which customization to apply to the image using variables.
 This script helped me add the device I’m imaging to the correct collection because I configure each department separately, as can be seen here:
 
-![](images/sccm/osd6.png)
+![](images/osd6.png)
 
-![](images/sccm/osd7.png)
+![](images/osd7.png)
 
 ???+ note
 

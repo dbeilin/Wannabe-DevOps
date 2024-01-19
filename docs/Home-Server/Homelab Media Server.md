@@ -38,7 +38,7 @@ Installing Docker and Docker-Compose is as simple as it gets:
 
 ### NAS Setup and paths
 1. Create a volume in your NAS. In my case, I created a RAID5 volume with 4 disks
-    ![](images/home-lab/volume1.png)
+    ![](images/volume1.png)
 
     !!! info inline end
         - The mount command can vary between systems.

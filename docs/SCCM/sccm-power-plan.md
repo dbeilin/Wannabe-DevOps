@@ -1,4 +1,4 @@
-![](images/sccm/power-plan/1.png)
+![](images/power-plan/1.png)
 
 In this guide I’ll show you how to set the Power Plan of Windows to High Performance during the OSD.
 
@@ -12,7 +12,7 @@ In the command line add this:
 PowerCfg.exe /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 ```
 
-![](images/sccm/power-plan/2.png)
+![](images/power-plan/2.png)
 
 ???+ note
 
@@ -26,7 +26,7 @@ PowerCfg.exe /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 
 Under the Options tab, create a TS Variable like this:
 
-![](images/sccm/power-plan/3.png)
+![](images/power-plan/3.png)
 
 Now, I also added this power plan to take affect during WinPE as well like this:
 
@@ -34,14 +34,14 @@ Now, I also added this power plan to take affect during WinPE as well like this:
 X:\Windows\System32\PowerCfg.exe /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 ```
 
-![](images/sccm/power-plan/4.png)
+![](images/power-plan/4.png)
 
 For testing purposes, I created a TS for this alone:
 
-![](images/sccm/power-plan/5.png)
+![](images/power-plan/5.png)
 
 Deploying it to my machine worked great:
 
-![](images/sccm/power-plan/6.png)
+![](images/power-plan/6.png)
 
 That's it, hope it helps someone 😊
