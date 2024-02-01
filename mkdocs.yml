@@ -25,6 +25,7 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - sane_lists
 
 theme:
   name: material
