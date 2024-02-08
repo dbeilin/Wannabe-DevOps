@@ -16,7 +16,7 @@ PowerCfg.exe /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 
 ???+ note
 
-    Every power plan has it’s own GUID. If you wish to set it back to something else, simply choose your GUID and implement it later in the TS. More information is [here](8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c ).
+    Every power plan has it’s own GUID. If you wish to set it back to something else, simply choose your GUID and implement it later in the TS.
 
 | Mode      | Description                          | GUID    |
 | ----------- | ------------------------------------ |  ------------ |
