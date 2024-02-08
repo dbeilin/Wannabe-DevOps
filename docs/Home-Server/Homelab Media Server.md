@@ -249,8 +249,8 @@ Apps in the compose file:
 - [Radarr](https://radarr.video/) - Managing movies.
 - [Sonarr](https://sonarr.tv/) - Managing TV shows.
 - [Bazarr](https://www.bazarr.media/) - Managing subtitles for movies and tv shows.
+- [Plex](https://plex.tv) - Media player for all of our downloads.
 - [qBitTorrent](https://www.qbittorrent.org/) - Torrent downloading client.
-- [Plex](plex.tv/) - Media player for all of our downloads.
 - [Sabnzbd](https://sabnzbd.org/) - Binary newsreader, our usenet downloader.
 - [Jackett](https://github.com/Jackett/Jackett) - This is our torrent indexer. it essentialy makes queries to torrent sites and retrives the data from them to pass on to radarr/sonarr.
 - [Overseerr](https://overseerr.dev/) - Requests manager for our media. Instead of going to any of the *arr apps, we can request media straight from this great UI.
