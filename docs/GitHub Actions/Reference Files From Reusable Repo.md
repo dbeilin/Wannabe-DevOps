@@ -97,3 +97,4 @@ jobs:
 ```
 
 This way, you don't have to keep a `.md` file in your regular repos and it can sit along your reusable workflows.
+That's it 😎
