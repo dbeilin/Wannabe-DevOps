@@ -1,4 +1,4 @@
-# Github Pagination
+# GitHub Pagination
 We recently needed to fetch a list of all of our repos and their branches for an internal tool we're working on and I wanted to document how we handled pagination.
 
 ## Prepare
