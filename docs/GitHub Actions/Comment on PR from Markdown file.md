@@ -34,4 +34,7 @@ Make sure to change the path `./test.md` to your markdown file.
 The result:
 ![](images/gha-pr-comment.png)
 
+!!! note
+    You might want to reference the `.md` file from another repo (i.e your reusable repo). Check out [this](./Reference%20Files%20From%20Reusable%20Repo.md) guide.
+
 That's it, pretty fun option to have in your environment 🫡
