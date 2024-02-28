@@ -1,6 +1,6 @@
 # Use Files From Another Repo
 ## Background
-While I was trying to implement a [workflow that templates an automatic PR comment](Comment%20on%20PR%20from%20Markdown%20file.md) from a Markdown file, I stumbled upon an issue where I couldn't call my `.md` file which ewas supposed to sit in anothr repo.
+While I was trying to implement a [workflow that templates an automatic PR comment](Comment%20on%20PR%20from%20Markdown%20file.md) from a Markdown file, I stumbled upon an issue where I couldn't call my `.md` file which was supposed to sit in anothr repo.
 We have a dedicated repository that holds all of our reusable Github Workflows, which we then reference in each of our services as needed.
 If I simply put my Markdown file in the same repo as our reusable workflows, the file would not be found when some repo calls this workflow.
 
