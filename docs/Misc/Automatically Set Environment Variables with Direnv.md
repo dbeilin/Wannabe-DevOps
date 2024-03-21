@@ -1,6 +1,6 @@
 # Direnv
 
-If you’re bouncing between multiple AWS accounts or credentials in your CLI, this tool might be a huge quality of life perk for you.
+If you’re bouncing between multiple CLI credentials like AWS for example, this tool might be a nice quality of life improvement.
 
 Basically, direnv can load and unload environment variables depending on the current directory you’re in. In this post I’ll show how to use it to switch between AWS credentials.
 
